@@ -1,0 +1,79 @@
+.common {
+  height         : 170px;
+  text-align     : center;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+
+  .card {
+    width        : 180px;
+    padding      : 14px 10px;
+    border-radius: 8px;
+    position     : relative;
+    cursor       : pointer;
+    background   : @color-white-1;
+
+    .check {
+      visibility: hidden;
+      color     : @color-blue-6;
+      font-size : 22px;
+      position  : absolute;
+      right     : 8px;
+      top       : 6px;
+    }
+
+    img {
+      width : 148px;
+      height: 108px;
+    }
+
+    .text {
+      margin-top : 10px;
+      color      : @color-black-9;
+      font-family: PingFang SC;
+      font-weight: 500;
+      font-size  : 14px;
+      line-height: normal;
+    }
+  }
+}
+
+.select {
+  height         : 170px;
+  text-align     : center;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+
+  .card {
+    width        : 180px;
+    padding      : 14px 10px;
+    border-radius: 8px;
+    background   : @color-blue-2;
+    position     : relative;
+    cursor       : pointer;
+
+    .check {
+      visibility: visible;
+      color     : @color-blue-6;
+      font-size : 22px;
+      position  : absolute;
+      right     : 8px;
+      top       : 6px;
+    }
+
+    img {
+      width : 148px;
+      height: 108px;
+    }
+
+    .text {
+      margin-top : 10px;
+      color      : @color-black-9;
+      font-family: PingFang SC;
+      font-weight: 500;
+      font-size  : 14px;
+      line-height: normal;
+    }
+  }
+}

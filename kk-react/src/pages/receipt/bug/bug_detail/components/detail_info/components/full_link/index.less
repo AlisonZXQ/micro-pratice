@@ -1,0 +1,24 @@
+.container {
+  .tabs {
+    font-size: 16px;
+    color    : @color-black-7;
+
+    .common {
+      cursor      : pointer;
+      margin-right: 10px;
+      margin-left : 10px;
+      cursor: pointer;
+    }
+    .item {
+      .common;
+      &:hover {
+        color: @color-blue-6;
+      }
+    }
+    .activeItem {
+      .common;
+      color : @color-blue-6;
+    }
+  }
+
+}

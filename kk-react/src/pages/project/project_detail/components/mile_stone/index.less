@@ -1,0 +1,805 @@
+.allTimeContainer {
+  width   : 100%;
+  position: relative;
+
+  .line {
+    height    : 2px;
+    background: @color-black-3;
+    position  : absolute;
+    top       : 145px;
+    width     : 100%;
+  }
+
+  .mileContainer {
+    display          : flex;
+    justify-content  : space-around;
+    margin           : 0px;
+    padding          : 0px;
+    display          : '-webkit-flex';
+    display          : flex;
+    -webkit-flex-flow: 'row nowrap'; //设置排列方式为横向排列，并且超出元素不换行
+    flex-flow        : row nowrap;
+    overflow-x       : auto;
+    overflow-y       : hidden;
+    list-style       : none;
+    padding-left     : 0px;
+
+    position: relative; // 为了让当前时间点定位
+
+    .today {
+      height   : 55px;
+      position : absolute;
+      top      : 128px;
+      width    : 0.5px;
+      z-index  : 999;
+      font-size: 40px;
+    }
+
+    .todaySame {
+      .today;
+      left: 31px;
+      top : 134px;
+    }
+
+    .todayRight {
+      .today;
+      left: 80px;
+    }
+
+    .todayLeft {
+      .today;
+      left: -20px;
+    }
+
+    .item {
+      text-align: center;
+      z-index   : 99;
+      position  : relative;
+
+      width  : 100px;
+      display: inline-block; //让所有的li在一行 注意这里不能用float:left 因为设置float后里超过一屏后会自动换行
+
+      .timeNode {
+        border         : 1px solid @color-blue-6;
+        position       : relative;
+        top            : 15px;
+        display        : flex;
+        height         : 42px;
+        padding        : 6px 8px;
+        border-radius  : 2px;
+        align-items    : center;
+        justify-content: center;
+        font-family    : PingFangSC-Regular;
+        font-size      : 12px;
+        color          : @color-black-8;
+        background     :@color-blue-1;
+
+        .extraText {
+          color: @color-blue-6;
+        }
+      }
+
+      .timeLine {
+        position   : relative;
+        left       : 49px;
+        width      : 1px;
+        top        : 18px;
+        height     : 80px;
+        border-left: 1px dashed @color-blue-6;
+        transform  : scaleX(0.5);
+      }
+
+      .timeNodeWhite {
+        border         : 1px solid @color-white-1;
+        color          : @color-white-1;
+        position       : relative;
+        top            : 15px;
+        line-height    : 28px;
+        height         : 28px;
+        height         : 42px;
+        padding        : 6px 2px;
+        align-items    : center;
+        justify-content: center;
+        font-family    : PingFangSC-Regular;
+        font-size      : 12px;
+        background     : @color-white-1;
+
+        .extraText {
+          color: @color-white-1;
+        }
+      }
+
+      .timeLineWhite {
+        position: relative;
+        left    : 49px;
+        width   : 1px;
+        top     : 18px;
+        height  : 80px;
+        border  : 1px dashed @color-white-1;
+        color   : @color-white-1;
+      }
+
+      .time {
+        position     : relative;
+        top          : -25px;
+        border       : 1px solid @color-black-4;
+        border-radius: 2px;
+        color        : @color-black-8;
+        background   : @color-white-1;
+        font-size    : 12px;
+        width        : 101px;
+        height       : 28px;
+        line-height  : 28px;
+      }
+
+      .node {
+        display        : inline-flex;
+        align-items    : center;
+        justify-content: center;
+        margin         : 5px;
+        width          : 20px;
+        height         : 20px;
+        position       : relative;
+        top            : -20px;
+        background     : @color-white-1;
+
+        .nodeStartTime {
+          border       : 2px solid @color-blue-6;
+          width        : 10px;
+          height       : 10px;
+          background   : @color-blue-1;
+          border-radius: 2px;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+          position     : relative;
+          top          : 1px;
+        }
+
+        .nodeEndTime {
+          border       : 2px solid @color-black-7;
+          width        : 10px;
+          height       : 10px;
+          background   : @color-black-1;
+          border-radius: 2px;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+          position     : relative;
+          top          : 1px;
+        }
+
+        .nodeTextStartTime {
+          border       : 1px solid @color-blue-6;
+          border-radius: 2px;
+          width        : 18px;
+          height       : 18px;
+          background   :@color-blue-1;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+        }
+
+        .nodeTextEndTime {
+          border       : 1px solid @color-black-5;
+          border-radius: 2px;
+          width        : 18px;
+          height       : 18px;
+          background   : @color-black-1;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+        }
+
+        .nodeText {
+          border         : 2px solid @color-blue-6;
+          border-radius  : 100%;
+          width          : 19px;
+          height         : 19px;
+          background     : @color-white-1;
+          display        : flex;
+          align-items    : center;
+          justify-content: center;
+          font-size      : 12px;
+          color          : @color-black-8;
+        }
+
+        .timeNodeStyle {
+          display         : inline-block;
+          border-radius   : 100%;
+          width           : 8px;
+          height          : 8px;
+          border          : 1px solid @color-blue-6;
+          background-color: @color-blue-6;
+        }
+
+        .nodeSuccess {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-green-6;
+        }
+
+        .nodeBegin {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-black-6;
+        }
+
+        .nodeFail {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-red-6;
+        }
+
+        .nodePend {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-blue-6;
+        }
+      }
+
+      .text {
+        position   : relative;
+        top        : -8px;
+        color      : @color-black-8;
+        font-family: PingFangSC-Regular;
+
+        .extraText {
+          color: @color-blue-6;
+        }
+      }
+    }
+  }
+
+  :global {
+    .ant-row {
+      .ant-form-item {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}
+
+.noneTimeContainer {
+  width   : 100%;
+  position: relative;
+
+  .line {
+    height    : 2px;
+    background: @color-black-3;
+    position  : absolute;
+    top       : 52px;
+    width     : 100%;
+  }
+
+  .mileContainer {
+    display          : flex;
+    justify-content  : space-around;
+    margin           : 0px;
+    padding          : 0px;
+    display          : '-webkit-flex';
+    display          : flex;
+    -webkit-flex-flow: 'row nowrap'; //设置排列方式为横向排列，并且超出元素不换行
+    flex-flow        : row nowrap;
+    overflow-x       : auto;
+    overflow-y       : hidden;
+    list-style       : none;
+    padding-left     : 0px;
+
+    position: relative; // 为了让当前时间点定位
+
+    .today {
+      height   : 55px;
+      position : absolute;
+      top      : 35px;
+      width    : 0.5px;
+      z-index  : 999;
+      font-size: 40px;
+    }
+
+    .todaySame {
+      .today;
+      left: 31px;
+      top : 42px;
+    }
+
+    .todayRight {
+      .today;
+      left: 80px;
+    }
+
+    .todayLeft {
+      .today;
+      left: -20px;
+    }
+
+    .item {
+      text-align   : center;
+      z-index      : 99;
+      position     : relative;
+      margin-top   : 10px;
+      margin-bottom: 20px;
+
+      width  : 100px;
+      display: inline-block; //让所有的li在一行 注意这里不能用float:left 因为设置float后里超过一屏后会自动换行
+
+      .time {
+        position     : relative;
+        border       : 1px solid @color-black-4;
+        border-radius: 2px;
+        color        : @color-black-8;
+        background   : @color-white-1;
+        font-size    : 12px;
+        width        : 101px;
+        height       : 28px;
+        line-height  : 28px;
+      }
+
+      .node {
+        display        : inline-flex;
+        align-items    : center;
+        justify-content: center;
+        margin         : 5px;
+        width          : 20px;
+        height         : 20px;
+        position       : relative;
+        background     : @color-white-1;
+
+        .nodeStartTime {
+          border       : 2px solid @color-blue-6;
+          width        : 10px;
+          height       : 10px;
+          background   :@color-blue-1;
+          border-radius: 2px;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+          position     : relative;
+          top          : 1px;
+        }
+
+        .nodeEndTime {
+          border       : 2px solid @color-black-7;
+          width        : 10px;
+          height       : 10px;
+          background   : @color-black-1;
+          border-radius: 2px;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+          position     : relative;
+          top          : 1px;
+        }
+
+        .nodeTextStartTime {
+          border       : 1px solid @color-blue-6;
+          border-radius: 2px;
+          width        : 18px;
+          height       : 18px;
+          background   :@color-blue-1;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+        }
+
+        .nodeTextEndTime {
+          border       : 1px solid @color-black-5;
+          border-radius: 2px;
+          width        : 18px;
+          height       : 18px;
+          background   : @color-black-1;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+        }
+
+        .nodeText {
+          border       : 2px solid @color-blue-6;
+          border-radius: 100%;
+          width        : 19px;
+          height       : 19px;
+          background   : @color-white-1;
+          line-height  : 14px;
+          font-size    : 12px;
+          color        : @color-black-8;
+        }
+
+        .nodeSuccess {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-green-6;
+        }
+
+        .nodeBegin {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-black-6;
+        }
+
+        .nodeFail {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-red-6;
+        }
+
+        .nodePend {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-blue-6;
+        }
+      }
+
+      .text {
+        position: relative;
+        top     : 15px;
+        color   : @color-black-8;
+
+        .extraText {
+          color: @color-blue-6;
+        }
+      }
+    }
+  }
+
+  :global {
+    .ant-row {
+      .ant-form-item {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}
+
+.partTimeContainer {
+  width   : 100%;
+  position: relative;
+
+  .line {
+    height    : 2px;
+    background: @color-black-3;
+    position  : absolute;
+    top       : 145px;
+    width     : 100%;
+  }
+
+  .mileContainer {
+    display          : flex;
+    justify-content  : space-around;
+    margin           : 0px;
+    padding          : 0px;
+    display          : '-webkit-flex';
+    display          : flex;
+    -webkit-flex-flow: 'row nowrap'; //设置排列方式为横向排列，并且超出元素不换行
+    flex-flow        : row nowrap;
+    overflow-x       : auto;
+    overflow-y       : hidden;
+    list-style       : none;
+    padding-left     : 0px;
+
+    position: relative; // 为了让当前时间点定位
+
+    .today {
+      height   : 55px;
+      position : absolute;
+      top      : 128px;
+      width    : 0.5px;
+      z-index  : 999;
+      font-size: 40px;
+    }
+
+    .todaySame {
+      .today;
+      left: 31px;
+      top : 134px;
+    }
+
+    .todayRight {
+      .today;
+      left: 80px;
+    }
+
+    .todayLeft {
+      .today;
+      left: -20px;
+    }
+
+    .item {
+      text-align: center;
+      z-index   : 99;
+      position  : relative;
+
+      width  : 100px;
+      display: inline-block; //让所有的li在一行 注意这里不能用float:left 因为设置float后里超过一屏后会自动换行
+
+      .timeNode {
+        border         : 1px solid @color-blue-6;
+        position       : relative;
+        top            : 15px;
+        display        : flex;
+        height         : 42px;
+        padding        : 6px 8px;
+        border-radius  : 2px;
+        align-items    : center;
+        justify-content: center;
+        font-family    : PingFangSC-Regular;
+        font-size      : 12px;
+        color          : @color-black-8;
+        background: @color-blue-1;
+
+        .extraText {
+          color: @color-blue-6;
+        }
+      }
+
+      .timeLine {
+        position : relative;
+        left     : 49px;
+        width    : 1px;
+        top      : 18px;
+        height   : 80px;
+        border   : 1px dashed @color-blue-6;
+        transform: scaleX(0.5);
+      }
+
+      .timeNodeWhite {
+        border         : 1px solid @color-white-1;
+        color          : @color-white-1;
+        position       : relative;
+        top            : 15px;
+        line-height    : 28px;
+        height         : 28px;
+        height         : 42px;
+        padding        : 6px 2px;
+        align-items    : center;
+        justify-content: center;
+        font-family    : PingFangSC-Regular;
+        font-size      : 12px;
+        background     : @color-white-1;
+
+        .extraText {
+          color: @color-white-1;
+        }
+      }
+
+      .timeLineWhite {
+        position: relative;
+        left    : 49px;
+        width   : 1px;
+        top     : 18px;
+        height  : 80px;
+        border  : 1px dashed @color-white-1;
+        color   : @color-white-1;
+      }
+
+      .time {
+        position     : relative;
+        top          : -25px;
+        border       : 1px solid @color-black-4;
+        border-radius: 2px;
+        color        : @color-black-8;
+        background   : @color-white-1;
+        font-size    : 12px;
+        width        : 101px;
+        height       : 28px;
+        line-height  : 28px;
+      }
+
+      .node {
+        display        : inline-flex;
+        align-items    : center;
+        justify-content: center;
+        margin         : 5px;
+        width          : 20px;
+        height         : 20px;
+        position       : relative;
+        top            : -20px;
+        background     : @color-white-1;
+
+        .nodeStartTime {
+          border       : 2px solid @color-blue-6;
+          width        : 10px;
+          height       : 10px;
+          background   :@color-blue-1;
+          border-radius: 2px;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+          position     : relative;
+          top          : 1px;
+        }
+
+        .nodeEndTime {
+          border       : 2px solid @color-black-7;
+          width        : 10px;
+          height       : 10px;
+          background   : @color-black-1;
+          border-radius: 2px;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+          position     : relative;
+          top          : 1px;
+        }
+
+        .nodeTextStartTime {
+          border       : 1px solid @color-blue-6;
+          border-radius: 2px;
+          width        : 18px;
+          height       : 18px;
+          background   :@color-blue-1;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+        }
+
+        .nodeTextEndTime {
+          border       : 1px solid @color-black-5;
+          border-radius: 2px;
+          width        : 18px;
+          height       : 18px;
+          background   : @color-black-1;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+        }
+
+        .nodeText {
+          border       : 2px solid @color-blue-6;
+          border-radius: 100%;
+          width        : 19px;
+          height       : 19px;
+          background   : @color-white-1;
+          line-height  : 15px;
+          font-size    : 12px;
+          color        : @color-black-8;
+        }
+
+        .timeNodeStyle {
+          display         : inline-block;
+          border-radius   : 100%;
+          width           : 8px;
+          height          : 8px;
+          border          : 1px solid @color-blue-6;
+          background-color: @color-blue-6;
+        }
+
+        .nodeSuccess {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-green-6;
+        }
+
+        .nodeBegin {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-black-6;
+        }
+
+        .nodeFail {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-red-6;
+        }
+
+        .nodePend {
+          border-radius: 100%;
+          width        : 8px;
+          height       : 8px;
+          background   : @color-blue-6;
+        }
+      }
+
+      .text {
+        position   : relative;
+        top        : -6px;
+        color      : @color-black-8;
+        font-family: PingFangSC-Regular;
+
+        .extraText {
+          color: @color-blue-6;
+        }
+      }
+    }
+  }
+
+  :global {
+    .ant-row {
+      .ant-form-item {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}
+
+.multiNode {
+  display      : block;
+  position     : relative;
+  margin-bottom: 8px;
+  width        : 500px;
+
+  .nodeSuccess {
+    display      : inline-block;
+    border-radius: 100%;
+    width        : 8px;
+    height       : 8px;
+    background   : @color-green-6;
+  }
+
+  .nodeBegin {
+    display      : inline-block;
+    border-radius: 100%;
+    width        : 8px;
+    height       : 8px;
+    background   : @color-black-6;
+  }
+
+  .nodeFail {
+    display      : inline-block;
+    border-radius: 100%;
+    width        : 8px;
+    height       : 8px;
+    background   : @color-red-6;
+  }
+
+  .nodePend {
+    display      : inline-block;
+    border-radius: 100%;
+    width        : 8px;
+    height       : 8px;
+    background   : @color-blue-6;
+  }
+}
+
+.nodeSuccess {
+  display      : inline-block;
+  border-radius: 100%;
+  width        : 8px;
+  height       : 8px;
+  background   : @color-green-6;
+}
+
+.nodeBegin {
+  display      : inline-block;
+  border-radius: 100%;
+  width        : 8px;
+  height       : 8px;
+  background   : @color-black-6;
+}
+
+.nodeFail {
+  display      : inline-block;
+  border-radius: 100%;
+  width        : 8px;
+  height       : 8px;
+  background   : @color-red-6;
+}
+
+.nodePend {
+  display      : inline-block;
+  border-radius: 100%;
+  width        : 8px;
+  height       : 8px;
+  background   : @color-blue-6;
+}
+
+.description {
+  width     : 400px;
+  max-height: 160px;
+  overflow  : auto;
+
+  img {
+    width     : 100%;
+    height    : auto;
+  }
+}

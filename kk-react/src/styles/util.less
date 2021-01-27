@@ -1,0 +1,224 @@
+a {
+  //全局a标签颜色
+  color: @color-blue-6;
+
+  &:hover {
+    color: @color-blue-5;
+  }
+
+  &:active {
+    color: @color-blue-7;
+  }
+}
+
+a[disabled] {
+  //全局a标签不可用颜色
+  color: @color-black-5;
+}
+
+.u-primary {
+  color: @primary-color;
+}
+
+// 标题
+.u-title {
+  color: @color-black-9;
+}
+
+// 全局副标题颜色
+.u-subtitle {
+  color: @color-black-8;
+}
+
+//抽屉基本信息右侧样式
+.drawer-right {
+  color: @color-black-8;
+  display: inline-block;
+  height: 26px;
+}
+
+// placeholder
+.u-placeholder {
+  color: @color-black-5;
+}
+
+.u-thirdtitle {
+  color: @color-black-6;
+}
+
+// checkbox选中状态不居中调整
+.ant-checkbox-checked .ant-checkbox-inner:after {
+  left: 3px;
+  top : 6px;
+}
+
+// radiobutton的全局样式
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  z-index     : 1;
+  color       : @color-blue-6;
+  background  : @color-white-1;
+  border-color: @color-blue-6;
+  box-shadow  : -1px 0 0 0 @color-blue-6;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+  border-color: @color-blue-6;
+  box-shadow  : none !important;
+}
+
+//全局消息提示
+.ant-message {
+  .ant-message-notice-content {
+    padding: 0px;
+
+    .ant-message-success {
+      //成功提示
+      padding      : 10px 16px;
+      background   : #F0FFF8;
+      border       : 1px solid @color-green-3;
+      box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.19);
+      border-radius: 2px;
+    }
+
+    .ant-message-error {
+      //失败提示
+      padding      : 10px 16px;
+      background   : @color-red-1;
+      border       : 1px solid @color-red-3;
+      box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.19);
+      border-radius: 2px;
+    }
+
+    .ant-message-warning {
+      //警告提示
+      padding      : 10px 16px;
+      background   : #FEFBE6;
+      border       : 1px solid #F9AE13;
+      box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.19);
+      border-radius: 2px;
+    }
+  }
+}
+
+// 全局的表单margin-botton都是15px
+:global {
+  .ant-form-item {
+    margin-bottom: 15px;
+  }
+}
+
+.loop(@counter) when (@counter >=0) {
+  .loop((@counter - 1)); // next iteration
+  @num: @counter * 5;
+
+  .u-mg@{num} {
+    margin: @num * 1px;
+  }
+
+  .u-mgt@{num} {
+    margin-top: @num * 1px;
+  }
+
+  .u-mgb@{num} {
+    margin-bottom: @num * 1px;
+  }
+
+  .u-mgl@{num} {
+    margin-left: @num * 1px;
+  }
+
+  .u-mgr@{num} {
+    margin-right: @num * 1px;
+  }
+
+  .u-pd@{num} {
+    padding: @num * 1px;
+  }
+
+  .u-pdt@{num} {
+    padding-top: @num * 1px;
+  }
+
+  .u-pdb@{num} {
+    padding-bottom: @num * 1px;
+  }
+
+  .u-pdl@{num} {
+    padding-left: @num * 1px;
+  }
+
+  .u-pdr@{num} {
+    padding-right: @num * 1px;
+  }
+}
+
+.loop(20);
+
+// 处理Card右上使用中型按钮时，Card头部高度过高的问题
+.m-extraBtn {
+  .ant-card-extra {
+    padding: 14px 0;
+  }
+}
+
+// windows下美化横向拖动条, 样式用于容器上
+.u-pretty-scroll-bar {
+  ::-webkit-scrollbar {
+    width        : 2px;
+    height       : 4px;
+    border-radius: 8px;
+    margin-top   : 2px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius   : 8px;
+
+    :hover {
+      background-color: #eaeaea;
+    }
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #eaeaea;
+    border-radius   : 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #eaeaea;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #E1E4E8;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #E1E4E8;
+  }
+}
+
+// dropdown下拉样式
+.m-menu {
+  overflow: auto;
+  cursor  : pointer;
+
+  .m-item {
+    height       : 34px;
+    line-height  : 34px;
+    margin-bottom: 6px;
+
+    &:hover {
+      background: @color-blue-1;
+      color: @color-blue-6;
+    }
+  }
+
+  .m-item:last-child {
+    margin-bottom: unset;
+  }
+}
+
+// 按钮弧度
+.ant-btn {
+  border-radius: 2px;
+}

@@ -1,0 +1,93 @@
+{
+  "env": {
+      "es6": true,
+      "node": true,
+      "browser": true,
+      "mocha": true
+  },
+  "plugins": [
+      "sonarjs",
+      "react-hooks"
+  ],
+  "extends": [
+      "plugin:sonarjs/recommended",
+      "eslint:recommended",
+      "react-app",
+      "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+      "react-hooks/rules-of-hooks": "error", // 检查 Hook 的规则
+      "react-hooks/exhaustive-deps": "warn", // 检查 effect 的依赖
+      "jsx-a11y/anchor-is-valid": "off",
+      "indent": [
+          "error",
+          2,
+          {
+              "SwitchCase": 1
+          }
+      ],
+      "eqeqeq": "error",
+      "no-lone-blocks": "error",
+      "no-lonely-if": "error",
+      "no-multi-spaces": "error",
+      "no-multiple-empty-lines": [
+          "error",
+          {
+              "max": 2
+          }
+      ],
+      "no-param-reassign": "error",
+      "no-spaced-func": "error",
+      "no-use-before-define": "warn",
+      "no-unused-vars": "warn",
+      "no-with": "error",
+      "default-case": "error",
+      "key-spacing": [
+          "error",
+          {
+              "beforeColon": false,
+              "afterColon": true
+          }
+      ],
+      "comma-spacing": [
+          "error",
+          {
+              "before": false,
+              "after": true
+          }
+      ],
+      "generator-star-spacing": [
+          "error",
+          {
+              "before": true,
+              "after": false
+          }
+      ],
+      "semi": [
+          "warn",
+          "always",
+          {
+              "omitLastInOneLineBlock": true
+          }
+      ],
+      "no-restricted-globals": "off",
+      "array-callback-return": "off",
+      "no-console": [
+          "warn",
+          {
+              "allow": [
+                  "info",
+                  "warn",
+                  "error",
+                  "time",
+                  "timeEnd"
+              ]
+          }
+      ],
+      "react/react-in-jsx-scope": "warn",
+      "sonarjs/cognitive-complexity": [
+          1
+      ],
+      "sonarjs/no-duplicate-string": ["warn"]
+  }
+}

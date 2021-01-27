@@ -1,0 +1,149 @@
+.container {
+  .text {
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid @color-black-4;
+    }
+  }
+
+  .richContainer {
+    position: relative;
+
+    img {
+      cursor: pointer;
+    }
+
+    .rich {
+      cursor    : pointer;
+      padding   : 0px 6px;
+      border    : 1px solid @color-black-4;
+      word-break: break-all;
+
+      img {
+        max-width: 100%;
+        height   : auto;
+      }
+    }
+
+    .editIcon {
+      display  : none;
+      color    : @color-blue-6;
+      font-size: 14px;
+      position : absolute;
+      right    : 20px;
+      top      : -2px;
+      cursor   : pointer;
+    }
+
+    .fullViewIcon {
+      display  : none;
+      color    : @color-blue-6;
+      font-size: 14px;
+      position : absolute;
+      right    : 2px;
+      top      : -2px;
+      cursor   : pointer;
+    }
+
+    &:hover {
+      .rich {
+        border: 1px solid @color-blue-6;
+      }
+
+      .fullViewIcon {
+        display: block;
+      }
+
+      .editIcon {
+        display: block;
+      }
+    }
+
+    .disabledRich {
+      .rich;
+
+      &:hover {
+        border: 1px solid @color-black-4;
+      }
+    }
+  }
+
+  .noTextColor {
+    color: @color-black-5;
+  }
+
+  .datePickerIcon {
+    font-size  : 8px;
+    color      : @color-black-9;
+    padding-top: 3px;
+  }
+}
+
+.fullModal {
+  :global {
+    .ant-card-body {
+      padding: 0px !important;
+    }
+
+    .ant-modal {
+      position: fixed;
+      top     : 0;
+      bottom  : 0;
+      padding : 0;
+      height  : 100%;
+
+      &-content {
+        display  : flex;
+        flex-flow: column nowrap;
+        height   : 100%;
+        width    : 100vw;
+
+        .ant-modal-header {
+          flex-grow: 0;
+        }
+
+        .ant-modal-body {
+          flex-grow       : 1;
+          padding         : 10px;
+          background-color: @color-black-3;
+          padding         : 16px 12px 0px 12px;
+        }
+
+        .ant-modal-footer {
+          flex-grow: 0;
+          position : relative;
+          bottom   : 15px;
+        }
+      }
+    }
+  }
+}
+
+.fullViewModal {
+  .fullModal;
+  position: relative;
+
+  :global {
+    .ant-modal {
+      &-content {
+        .ant-modal-body {
+          background: @color-black-3;
+        }
+
+        .ant-modal-footer {
+          bottom : 0px;
+          padding: 12px 20px;
+        }
+
+      }
+    }
+  }
+}
+
+.fullViewContainer {
+  padding: 25px;
+  background-color: @color-white-1;
+  height: calc(100vh - 134px);
+  overflow: auto;
+}

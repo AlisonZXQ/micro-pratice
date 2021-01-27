@@ -1,0 +1,215 @@
+.container {
+
+  margin: 16px;
+
+  :global {
+    .ant-card-body {
+      padding: 10px;
+    }
+  }
+
+  .rule {
+    position: absolute;
+    right: 110px;
+    .timeBegin {
+      font-family : PingFangSC-Medium;
+      font-size   : 14px;
+      color       : @color-black-6;
+      margin-right: 10px;
+    }
+  }
+
+  .ruleAlone {
+    .rule;
+    position: absolute;
+    right: 0px;
+  }
+
+  .requirementPoolIcon {
+    display        : inline-flex;
+    justify-content: center;
+    align-items    : center;
+    width          : 28px;
+    height         : 28px;
+    background     : @color-blue-6;
+    box-shadow     : 0 0 8px 0 rgba(45, 153, 255, 0.60);
+    border-radius  : 2px;
+
+    .icon {
+      color    : @color-white-1;
+      font-size: 16px;
+    }
+  }
+
+  .itemBorderBottom {
+    border       : 1px solid @color-black-4;
+    border-bottom: none;
+    position     : relative;
+  }
+
+  .itemBorderBottom:last-child {
+    border-bottom: 1px solid @color-black-4;
+  }
+
+  .title {
+    height         : 44px;
+    line-height    : 44px;
+    // padding-left: 25px;
+    background     : @color-black-1;
+    border         : 1px solid @color-black-4;
+    padding        : 0px 8px;
+
+    font-family: PingFang SC;
+    font-style : normal;
+    font-weight: 600;
+    font-size  : 14px;
+    color      : @color-black-8;
+  }
+
+  .dragIcon {
+    color    : @color-black-4;
+    font-size: 18px;
+    position : relative;
+    right    : 5px;
+    top      : 1px;
+    cursor   : move;
+  }
+
+  .hiddenDragIcon {
+    .dragIcon;
+    color    : @color-white-1;
+  }
+
+  .issueIcon {
+    font-size: 14px;
+    position : relative;
+    top      : -2px;
+    right    : 2px;
+  }
+
+  .levelIcon {
+    position    : relative;
+    top         : -2px;
+    font-size   : 16px;
+    margin-right: 5px;
+  }
+
+  .header {
+    .count {
+      color       : @color-blue-6;
+      margin-right: 5px;
+    }
+
+    .tip {
+      position    : relative;
+      top         : 1px;
+      margin-right: 10px;
+      color       : @color-black-5;
+    }
+  }
+
+  .emptyCard {
+    height         : calc(100vh - 200px);
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    background-color: @color-white-1;
+  }
+
+  .versionListSchedule {
+    .collapse {
+      position: absolute;
+      top     : -107px;
+      right   : 0px;
+    }
+
+    .card {
+      background   : @color-white-1;
+      margin-bottom: 10px;
+      padding      : 14px;
+
+      .firstLine {
+        margin-bottom: 10px;
+
+        .icon {
+          margin-right: 5px;
+        }
+
+        .iconExpand {
+          .icon;
+        }
+
+        .iconCollapse {
+          .icon;
+          transform: rotateZ(-90deg);
+        }
+
+        .versionTitle {
+          position    : relative;
+          top         : 1px;
+          font-family : PingFang SC;
+          font-style  : normal;
+          font-weight : 600;
+          font-size   : 16px;
+          color       : @color-black-9;
+          margin-right: 10px;
+        }
+
+        .versionEndTime {
+          position: relative;
+          top     : 3px;
+        }
+
+        .versionImportant {
+          color: @color-blue-6;
+        }
+      }
+
+    }
+  }
+
+  .requirementPoolSchedule {
+    background-color: @color-white-1;
+    padding         : 10px;
+
+    .requiremenTitle {
+      color        : @color-black-9;
+      font-family  : PingFang SC;
+      font-weight  : 500;
+      font-size    : 16px;
+      line-height  : normal;
+      margin-bottom: 10px;
+
+      .currentDragType {
+        font-size: 14px;
+        color: @color-black-6;
+      }
+    }
+  }
+}
+
+// requirementLevelSetting
+.levelSettingText {
+  position: relative;
+  top     : 4px;
+}
+
+.levelSettingName {
+  font-family: PingFangSC-Regular;
+  font-size  : 14px;
+  color      : @color-black-6;
+  position   : relative;
+  top        : -10px;
+}
+
+.dragDiv {
+  background: @color-black-2;
+  height: 32px;
+  line-height: 32px;
+  margin-top: 10px;
+  padding-left: 70px;
+}
+
+.emptyTip {
+  color: @color-black-6;
+}

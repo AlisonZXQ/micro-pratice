@@ -1,0 +1,120 @@
+.issueSetting {
+  :global {
+    .ant-tabs-nav-scroll {
+      background: @color-white-1;
+    }
+  }
+}
+
+.svTitle {
+  background-color: @color-black-1;
+  font-weight     : bold;
+  font-size       : 12px;
+  color           : @color-black-9;
+}
+
+.cascaderContent {
+  .cascaderItem {
+    padding: 5px 0px;
+
+    .itemLabel {
+      margin-top: 5px;
+
+      &:first-child {
+        margin-top: 0px;
+      }
+    }
+
+    .configName {
+      width: 280px;
+    }
+  }
+
+}
+
+.container {
+  .customTitle {
+    background : @color-black-1;
+    color      : @color-black-9;
+    font-weight: bold;
+    font-size  : 12px;
+    height     : 45px;
+    line-height: 45px;
+  }
+
+  .draggerItem {
+    // background: green !important;
+
+    &:hover {
+      background: @color-blue-1 !important;
+    }
+  }
+}
+
+.moveLabel {
+  width        : 100%;
+  height       : 36px;
+  line-height  : 36px;
+  text-align   : center;
+  background   : @color-blue-1;
+  border       : 1px solid @color-blue-6;
+  border-radius: 2px;
+  margin-top   : 10px;
+  position     : relative;
+
+  .icon {
+    font-size: 20px;
+    position : relative;
+    top      : 2px;
+  }
+
+  .right {
+    color: @color-blue-6;
+  }
+}
+
+.moveTip {
+  background : @color-black-1;
+  color      : @color-black-8;
+  font-family: PingFang SC;
+  margin-top : 10px;
+  padding    : 8px 12px;
+}
+
+.success {
+  .successIcon {
+    display   : block;
+    width     : 100%;
+    text-align: center;
+    color     : @color-green-3;
+    font-size : 42px;
+  }
+
+  .successTip {
+    width      : 100%;
+    font-weight: 500;
+    color      : @color-black-9;
+    text-align : center;
+    margin-top : 10px;
+  }
+
+  .successLabel {
+    margin-top: 10px;
+  }
+
+  .successContent {
+    color     : @color-black-9;
+    margin-top: 10px;
+    background: @color-black-1;
+    padding   : 8px 12px;
+  }
+}
+
+.emptyTip {
+  color: @color-black-6;
+}
+
+
+.defaultInitValue {
+  color: @color-black-5;
+}

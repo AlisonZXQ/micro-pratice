@@ -1,0 +1,128 @@
+.content {
+  border: 1px @color-black-4 solid;
+  .header {
+    height: 56px;
+    border-bottom: 1px @color-black-4 solid;
+    background: @color-black-1;
+    display: flex;
+    align-items: center;
+    .headerItem {
+      margin-left: 20px;
+    }
+  }
+  .body {
+    min-height: 200px;
+    padding: 20px;
+  }
+  .dboxBody {
+    height: 400px;
+    .dbox {
+      display: flex;
+      justify-content: flex-start;
+      .refresh {
+        position: absolute;
+        top: -40px;
+        width: 20px;
+        font-size: 16px;
+        left: 216px;
+      }
+      .left{
+        width: 110px;
+        padding-bottom: 100px;
+        .item {
+          display: block;
+          height: 32px;
+          line-height: 32px;
+          cursor: pointer;
+          text-align: center;
+          &:hover {
+            color: @color-blue-6;
+          }
+        }
+        .activeItem {
+          .item;
+          background: @color-blue-1;
+          color: @color-blue-6;
+        }
+        border-right: 1px @color-black-4 solid;
+      }
+      .right {
+        width: 100%;
+        overflow: auto;
+        height: 400px;
+        .space {
+          display: inline-flex;
+          justify-content: flex-start;
+          .spaceItem {
+            width: 100px;
+            height: 400px;
+            overflow: auto;
+            border-right: 1px @color-black-4 solid;
+            .item {
+              height: 32px;
+              line-height: 32px;
+              padding-left: 10px;
+              position: relative;
+              cursor: pointer;
+              &:hover {
+                color: @color-blue-6;
+              }
+            }
+            .activeItem {
+              .item;
+              background: @color-blue-1;
+              color: @color-blue-6;
+            }
+          }
+          .bigSpaceItem {
+            .spaceItem;
+            width: 215px;
+            .name {
+              display: inline-block;
+              width: calc(100% - 70px);
+            }
+          }
+        }
+        .near {
+          .nearItem {
+            width: 100%;
+            height: 32px;
+            line-height: 32px;
+            padding-left: 16px;
+            position: relative;
+            cursor: pointer;
+            &:hover {
+              color: @color-blue-6;
+            }
+            .name {
+              display: inline-block;
+              width: calc(100% - 70px);
+            }
+          }
+          .activeNearItem {
+            .nearItem;
+            color: @color-blue-6;
+            background: @color-blue-1;
+          }
+        }
+      }
+    }
+  }
+}
+.tip {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  color: @color-black-6;
+}
+
+.lastIcon {
+  position: absolute;
+  right: 20px;
+}
+
+.picture {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}

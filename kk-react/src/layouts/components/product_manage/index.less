@@ -1,0 +1,366 @@
+// 侧边
+.sider {
+  flex      : 0 0 156px;
+  position  : relative; //工作项的hover展示功能需要此项注释
+  box-shadow: 2px 0 8px 0 rgba(25, 34, 46, 0.08);
+  z-index   : 99;
+
+  .ulStyle {
+    list-style: none;
+    padding   : 0px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : calc(100vh - 175px);
+
+    .returnProduct {
+      cursor          : pointer;
+      text-align      : center;
+      margin          : 16px 8px;
+      height          : 42px;
+      line-height     : 42px;
+      background-color: @color-black-2;
+      opacity         : initial;
+      border-radius   : 6px;
+      font-family     : PingFangSC-Regular;
+      font-size       : 14px;
+      color           : @color-black-8;
+    }
+
+    .settingItem {
+      position    : relative;
+      display     : block;
+      height      : 43px;
+      line-height : 43px;
+      font-family : PingFangSC-Regular;
+      color       : @color-black-6;
+      cursor      : pointer;
+      padding-left: 30px;
+
+      .ItemArrow {
+        position   : absolute;
+        top        : 0px;
+        right      : 10px;
+        line-height: 42px;
+        color      : @color-black-4;
+        font-size  : 12px;
+      }
+    }
+
+    .settingItemActive {
+      color     : @color-blue-6;
+      box-shadow: 0 0 12px 0 rgba(25, 34, 46, 0.22);
+      opacity   : initial;
+
+      .ItemArrow {
+        color: @color-black-4;
+      }
+
+      &:after {
+        position        : absolute;
+        left            : 0;
+        top             : 0;
+        width           : 2px;
+        height          : 43px;
+        display         : block;
+        background-color: @color-blue-6;
+        content         : '';
+      }
+    }
+
+    .liStyle {
+      height      : 42px;
+      line-height : 42px;
+      padding-left: 24px;
+
+      &:hover {
+        .icon {
+          color: @color-blue-6;
+        }
+
+        .name {
+          color: @color-blue-6;
+        }
+
+        .down {
+          color: @color-blue-6;
+        }
+
+        .up {
+          color: @color-blue-6;
+        }
+      }
+
+      .icon {
+        color: @color-black-4;
+      }
+
+      .name {
+        color: @color-black-6;
+      }
+    }
+
+    .liSelectStyle {
+      font-size   : 14px;
+      padding-left: 22px;
+      height      : 42px;
+      line-height : 42px;
+      color       : @color-blue-6;
+      background  : rgba(255, 255, 255, 1);
+      box-shadow  : 0px 0px 12px 0px rgba(25, 34, 46, 0.22);
+      border-left : 2px solid rgba(45, 153, 255, 1);
+    }
+
+    .liPosition {
+      position: relative;
+      top     : 2px;
+    }
+
+    // 缺陷的位置
+    .bugPosition {
+      position: relative;
+      top     : 2px;
+      left    : -1px;
+    }
+
+    .arrow {
+      position : absolute;
+      right    : 10px;
+      color    : @color-black-4;
+      font-size: 12px;
+    }
+
+    .receiptLiActive {
+      .receiptLi;
+
+      .icon {
+        color: @color-blue-6;
+      }
+
+      .name {
+        color: @color-blue-6;
+      }
+    }
+
+    .enable {
+      color: @color-blue-6;
+    }
+
+    .receiptLi {
+      .liStyle;
+      height      : auto;
+      padding-left: 0px;
+      cursor: pointer;
+
+      .parentDiv {
+        padding-left: 24px;
+        &:hover {
+          .showHoverDiv {
+            left: 156px;
+          }
+        }
+      }
+
+      .childDiv {
+        padding-left    : 51px;
+        background-color: @color-black-1;
+        color           : @color-black-6;
+      }
+
+      .childDiv:hover {
+        padding-left    : 51px;
+        background-color: @color-black-1;
+        color           : @color-blue-6;
+      }
+
+      .childDivSelect {
+        border-left     : 2px solid @color-blue-6;
+        padding-left    : 49px;
+        background-color: @color-black-1;
+        color           : @color-blue-6;
+      }
+
+    }
+
+    .down {
+      color    : @color-black-6;
+      transform: rotate(-90deg);
+    }
+
+    .up {
+      color    : @color-black-6;
+      transform: rotate(90deg);
+    }
+  }
+
+  .bottom {
+
+    .productSetting {
+      display      : inline-block;
+      width        : 126px;
+      font-family  : PingFangSC-Regular;
+      border-radius: 25.5px;
+
+      text-align: center;
+
+      .icon {
+        font-size: 16px;
+      }
+    }
+
+    .expandIcon {
+      color       : @color-black-6;
+      font-size   : 16px;
+      position    : relative;
+      top         : 3px;
+      cursor      : pointer;
+      transform   : rotateZ(180deg);
+      float       : right;
+      right       : 10px;
+    }
+  }
+
+}
+
+// 折叠后的sider
+.collapseSider {
+  flex      : 0 0 60px;
+  position  : relative;
+  box-shadow: 2px 0 8px 0 rgba(25, 34, 46, 0.08);
+  z-index   : 99;
+
+  .ulStyle {
+    overflow-y: auto;
+    list-style  : none;
+    padding-left: 0px;
+
+    height: calc(100vh - 200px);
+
+    .sliderItem {
+      position: relative;
+
+      .liStyle {
+        height      : 42px;
+        line-height : 42px;
+        padding-left: 20px;
+        color       : @color-black-7;
+        font-size   : 14px;
+
+        &:hover {
+          .icon {
+            color: @color-blue-6;
+          }
+        }
+
+        .icon {
+          color: @color-black-4;
+        }
+      }
+
+      .liSelectStyle {
+        font-size   : 14px;
+        padding-left: 18px;
+        height      : 42px;
+        line-height : 42px;
+        color       : @color-blue-6;
+        background  : rgba(255, 255, 255, 1);
+        box-shadow  : 0px 0px 12px 0px rgba(25, 34, 46, 0.22);
+        border-left : 2px solid rgba(45, 153, 255, 1);
+      }
+
+      .liPosition {
+        position: relative;
+        top     : 2px;
+      }
+
+      // 缺陷的位置
+      .bugPosition {
+        position: relative;
+        top     : 2px;
+        left    : -1px;
+      }
+
+      .diffHoverName {
+        &:hover {
+          color: @color-blue-6;
+        }
+      }
+
+      .hoverName {
+        position     : absolute;
+        left         : 60px;
+        min-width    : 80px;
+        height       : 42px;
+        background   : @color-white-1;
+        box-shadow   : 0 2px 8px 0 rgba(25, 34, 46, 0.08);
+        border-radius: 2px;
+        top          : 0px;
+        text-align   : center;
+        line-height  : 42px;
+        z-index      : 99999;
+        background   : @color-white-1;
+        cursor       : pointer;
+      }
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    bottom  : 0px;
+    background: @color-white-1;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .productSetting {
+      display      : block;
+      font-size    : 18px;
+      margin-left  : 20px;
+      margin-bottom: 15px;
+    }
+
+    .collapseIcon {
+      display    : block;
+      color      : @color-black-6;
+      font-size  : 16px;
+      position   : relative;
+      top        : 1px;
+      cursor     : pointer;
+      margin-left: 22px;
+    }
+  }
+
+}
+
+.showHoverDiv {
+  min-width    : 48px;
+  background   : @color-white-1;
+  text-align   : center;
+  line-height  : 32px;
+  cursor       : pointer;
+
+  .hoverDivItem {
+    color: @color-black-9;
+
+    &:hover {
+      color: @color-blue-6;
+    }
+  }
+
+  .currentActive {
+    color: @color-blue-6;
+  }
+
+  .activeDivItem {
+    color: @color-blue-6;
+  }
+}
+
+.noArraw {
+  :global {
+    .ant-popover-arrow {
+      display: none!important;
+    }
+  }
+}
+

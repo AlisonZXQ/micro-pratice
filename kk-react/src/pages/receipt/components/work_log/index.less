@@ -1,0 +1,59 @@
+.workLog {
+  margin-bottom: 20px;
+  background: @color-white-1;
+  padding: 12px;
+  img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .item {
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0px;
+    }
+    min-height: 32px;
+    .name {
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      line-height: 32px;
+      font-size: 12px;
+      color: @color-white-1;
+      background: @color-blue-6;
+      border-radius: 100%;
+      float: left;
+    }
+    .content {
+      display: block;
+      margin-left: 42px;
+      .logTitle {
+        font-weight: 500;
+        .operation {
+          display: none;
+          margin-right: 10px;
+          .icon {
+            color:@color-black-5;
+          }
+        }
+        &:hover {
+          .operation {
+            display: inline-block;
+          }
+        }
+        .tag {
+          display: inline-block;
+          font-weight: 400;
+          margin-right: 10px;
+          padding: 3px 5px;
+          background: @color-black-1;
+          border-radius: 2px;
+        }
+      }
+      .logDetail {
+        color: @color-black-8;
+        margin-top: 5px;
+      }
+    }
+  }
+}

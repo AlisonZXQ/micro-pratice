@@ -1,0 +1,37 @@
+.container {
+  :global {
+    .ant-badge-count {
+      min-width  : 15px;
+      height     : 15px;
+      padding    : 0 4px;
+      line-height: 15px;
+    }
+  }
+
+  .tab {
+    display  : inline-block;
+    padding  : 0px 15px;
+    font-size: 16px;
+    cursor   : pointer;
+
+    &:hover {
+      color: @color-blue-6;
+    }
+  }
+
+  .tabActive {
+    .tab;
+    color: @color-blue-6;
+
+    .text {
+      display       : inline-block;
+      border-bottom : 2px solid @color-blue-6;
+      padding-bottom: 10px;
+    }
+  }
+
+  .tabTodo {
+    .tab;
+    color: @color-black-7;
+  }
+}

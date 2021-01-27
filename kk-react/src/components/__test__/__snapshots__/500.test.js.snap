@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`500 should snapshot correctly 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="m-error-404 f-cb"
+  >
+    <div
+      className="m-pic f-fl"
+    >
+      <MyIcon
+        className="icon"
+        type="icon-500"
+      />
+    </div>
+    <div
+      className="m-tip f-fl"
+    >
+      <h1>
+        500
+      </h1>
+      <h2>
+        抱歉，服务器出错了
+      </h2>
+    </div>
+  </div>
+</div>
+`;

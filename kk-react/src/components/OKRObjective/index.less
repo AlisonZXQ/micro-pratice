@@ -1,0 +1,114 @@
+.body {
+  width : 603px;
+  border: 1px solid @color-black-4;
+
+  .header {
+    height          : 50px;
+    line-height     : 50px;
+    background-color: @color-black-1;
+    width           : 100%;
+    border-bottom   : 1px solid @color-black-4;
+    padding-left    : 12px;
+  }
+
+  .content {
+    padding: 12px 0px;
+    width  : 100%;
+
+    .date {
+      margin-left: 15px;
+    }
+
+    .objectiveContainer {
+      margin-top: 10px;
+      max-height: 320px;
+      overflow  : auto;
+
+      .row {
+        width      : 570px;
+        padding    : 6px;
+        border     : 1px solid @color-black-4;
+        margin     : 10px 16px;
+        display    : flex;
+        align-items: center;
+        cursor     : pointer;
+        position   : relative;
+
+        .tag {
+          width        : 48px;
+          height       : 22px;
+          line-height  : 22px;
+          text-align   : center;
+          background   : @color-blue-6;
+          border-radius: 2px;
+          font-family  : PingFangSC-Regular;
+          font-size    : 12px;
+          color        : @color-white-1;
+          line-height  : 20px;
+          position     : absolute;
+          left         : -5px;
+          top          : -5px;
+        }
+
+        .radio {
+          display   : inline-block;
+          width     : 10%;
+          text-align: center;
+        }
+
+        .name {
+          display    : inline-block;
+          width      : 40%;
+          font-family: PingFangSC-Medium;
+          color      : @color-black-9;
+        }
+
+        .description {
+          display  : inline-block;
+          width    : 50%;
+          font-size: 12px
+        }
+      }
+
+      .rowActive {
+        .row;
+        border: 1px solid @color-blue-6;
+        color : @color-blue-6;
+
+        .name {
+          color: @color-blue-6;
+        }
+      }
+
+      .rowDisabled {
+        .row;
+        border     : 1px solid @color-black-4;
+        color: @color-black-4;
+        .name {
+          color: @color-black-4;
+        }
+        cursor: unset;
+      }
+
+      .groupHeader {
+        margin-left: 15px;
+        color      : @color-blue-6;
+        padding: 2px 0px;
+
+        .title {
+          cursor: pointer;
+          .name {}
+
+          .iconCollapse {
+            transform: rotateZ(180deg);
+          }
+
+          .iconExpand {
+            transform: rotateZ(-90deg);
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,360 @@
+.banner {
+  background-image: linear-gradient(179deg, #FAFCFF 0%, #FFFFFF 88%);
+
+  .header {
+    position   : relative;
+    height     : 56px;
+    line-height: 56px;
+  }
+
+  .wrap {
+    margin             : 0 auto;
+    width              : 1164px;
+    padding-top        : 40px;
+    // height: 427px;
+    background-repeat  : no-repeat;
+    background-size    : 574px 427px;
+    background-position: right top;
+    background-image   : url(../../../assets/login/banner.png);
+
+    .title {
+      font-family   : PingFangSC-Semibold;
+      font-size     : 52px;
+      color         : #000000;
+      letter-spacing: 3px;
+    }
+
+    .subtitle {
+      margin-top    : 5px;
+      font-family   : PingFangSC-Semibold;
+      font-size     : 52px;
+      color         : #000000;
+      letter-spacing: 3px;
+    }
+
+    .description {
+      margin-top : 36px;
+      width      : 487px;
+      font-family: PingFangSC-Regular;
+      font-size  : 16px;
+      color      : #68686A;
+      line-height: 32px;
+    }
+  }
+}
+
+.introduce {
+  margin-top: 57px;
+  height    : 372px;
+
+  .wrap {
+    position: relative;
+    margin  : 0 auto;
+    width   : 1164px;
+
+    .introuceInfo {
+      .title {
+        font-family: PingFangSC-Semibold;
+        font-size  : 30px;
+        color      : @color-black-9;
+        line-height: 42px;
+        text-align : center;
+      }
+
+      .subtitle {
+        margin-top : 12px;
+        font-family: PingFangSC-Regular;
+        font-size  : 14px;
+        color      : @color-black-8;
+        line-height: 20px;
+        text-align : center;
+      }
+    }
+
+    .introducePart {
+      margin-top: 88px;
+
+      .content {
+        position     : relative;
+        float        : left;
+        width        : 282px;
+        height       : 206px;
+        margin-right : 12px;
+        background   : #FFFFFF;
+        box-shadow   : 0 2px 10px 0 rgba(25, 34, 46, 0.12);
+        border-radius: 20.9px;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        .loop(@num) when (@num <=4) {
+          .loop((@num + 1)); // next iteration
+
+          .titleIcon@{num} {
+            background         : #FFFFFF;
+            background-image   : url('../../../assets/login/introduce@{num}.png');
+            position           : absolute;
+            left               : 50%;
+            margin-left        : -39px;
+            top                : -39px;
+            width              : 78px;
+            height             : 78px;
+            border-radius      : 50%;
+            box-shadow         : 0 2px 18px 0 rgba(25, 34, 46, 0.12);
+            background-position: center center;
+            background-repeat  : no-repeat;
+          }
+        }
+
+        .loop(1);
+
+        .title {
+          padding    : 55px 22px 0;
+          font-family: PingFangSC-Semibold;
+          font-size  : 16px;
+          color      : @color-black-9;
+          font-weight: bold;
+        }
+
+        .desc {
+          padding    : 12px 22px;
+          font-family: PingFangSC-Regular;
+          font-size  : 14px;
+          color      : @color-black-8;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+
+.data {
+  margin-top      : 64px;
+  background-image: linear-gradient(270deg, #1F253B 0%, #101626 49%, #131626 79%, #141A28 100%);
+
+  .wrap {
+    position: relative;
+    margin  : 0 auto;
+    width   : 1164px;
+    .dataInfo {
+      padding-top: 58px;
+      text-align: center;
+      .title {
+        font-family: PingFangSC-Semibold;
+        font-size: 30px;
+        color: #fff;
+        line-height: 42px;
+      }
+      .subtitle {
+        margin-top: 12px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: @color-black-5;
+        line-height: 20px;
+      }
+    }
+    .dataContent {
+      margin-top: 55px;
+      padding-bottom: 35px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      .contentPart {
+        flex-grow: 1;
+        .loop(@num) when (@num <=7) {
+          .loop((@num + 1)); // next data
+
+          .count@{num} {
+            padding-top: 93px;
+            line-height: 53px;
+            height: 53px;
+            text-align: center;
+            font-family: PingFangSC-Medium;
+            // overflow: hidden;
+            font-size: 38px;
+            color: #FFFFFF;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-image: url('../../../assets/login/data@{num}.png');
+            background-size: 52px 57px;
+          }
+        }
+
+        .loop(1);
+        .label {
+          margin-top: 57px;
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: @color-black-6;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .databg {
+    position: relative;
+    margin  : 0 auto;
+    width   : 100%;
+    img {
+      width: 100%;
+      height: 100px;
+    }
+  }
+
+}
+
+.product {
+  margin-top: 0px;
+  padding-bottom: 35px;
+  background-color: #fff;
+  .wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1164px;
+    .productInfo {
+      padding-top: 50px;
+      text-align: center;
+      .title {
+        font-family: PingFangSC-Semibold;
+        font-size: 30px;
+        color: @color-black-9;
+        line-height: 42px;
+      }
+      .subtitle {
+        margin-top: 12px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: @color-black-8;
+        line-height: 20px;
+      }
+    }
+
+    .productContent {
+      margin: 25px auto 0;
+      width: 1110px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-items: flex-start;
+      .loop(@num) when (@num <=7) {
+        .loop((@num + 1)); // next product
+
+        .contentPart@{num} {
+          width: 222px;
+          height: 88px;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-position: center center;
+          background-image: url('../../../assets/login/product@{num}.png');
+        }
+      }
+
+      .loop(1);
+    }
+  }
+}
+
+.footer {
+  height: 80px;
+  background-image: linear-gradient(45deg, #2B74E2 0%, #004CBF 100%);
+  .wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1164px;
+    height: 100%;
+    .wrap1 {
+      position: absolute;
+      left: 0;
+      top: 15px;
+      font-family: PingFangSC-Semibold;
+      font-size: 18px;
+      color: #fff;
+      line-height: 25px;
+    }
+    .wrap2 {
+      position: absolute;
+      left: 0;
+      top: 46px;
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      line-height: 20px;
+    }
+    .wrap3 {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -18px;
+      padding: 0;
+      width: 124px;
+      font-size: 15px;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      border-radius: 2px;
+      display: inline-block;
+      background-color: @color-blue-6;
+      border: 1px solid transparent;
+      font-family: PingFangSC-Regular;
+      color: #fff;
+    }
+  }
+}
+
+.hotline {
+  position: absolute;
+  right: 12px;
+  bottom: 36px;
+  .card {
+    width: 300px;
+    height: 320px;
+    background: #fff;
+    box-shadow: 0 2px 12px 0 rgba(25,34,46,0.20);
+    position: absolute;
+    top: -320px;
+    left: -260px;
+    .cardTitle {
+      height: 123px;
+      background-image: linear-gradient(180deg, #014DC0 0%, #2A73E1 100%);
+      box-shadow: 0 2px 12px 0 rgba(25,34,46,0.20);
+      padding-top: 16px;
+      font-family: PingFangSC-Semibold;
+      font-size: 18px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    .cardLine {
+      margin: 16px 12px 0;
+      padding: 16px;
+      background: #FFFFFF;
+      box-shadow: 0 2px 12px 0 rgba(25,34,46,0.16);
+      border-radius: 2px;
+      border-top: 3px @color-blue-6 solid;
+      box-sizing: border-box;
+      .name {
+        font-family: PingFangSC-Semibold;
+        font-size: 16px;
+        color: @color-black-9;
+        line-height: 22px;
+      }
+      .groupName {
+        margin-top: 8px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: @color-black-8;
+        line-height: 20px;
+      }
+      .popo {
+        width: 32px;
+        top: 12px;
+        position: absolute;
+        right: 0px;
+        cursor: pointer;
+      }
+    }
+  }
+}

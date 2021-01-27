@@ -1,0 +1,44 @@
+.container {
+  :global {
+    .ant-spin-nested-loading {
+      position: relative !important;
+    }
+    .ant-spin-container {
+      position: relative !important;
+    }
+  }
+
+  .uploadC {
+    .dragger {
+      :global {
+        .ant-upload.ant-upload-select {
+          width: 100% !important;
+        }
+      }
+    }
+
+    .upload {
+      height     : 50px;
+      line-height: 50px;
+      width      : 100%;
+      color      : @color-black-8;
+
+      .icon {
+        width       : 30px;
+        margin-right: 6px;
+        position    : relative;
+        top         : -2px;
+      }
+
+      .text {
+        font-weight: 400;
+      }
+    }
+
+    &:hover {
+      .upload {
+        color: @color-blue-5;
+      }
+    }
+  }
+}

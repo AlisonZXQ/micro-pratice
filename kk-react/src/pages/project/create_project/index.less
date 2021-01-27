@@ -1,0 +1,15 @@
+.widthFull {
+  width: 100%;
+}
+
+.container {
+  margin: 15px;
+
+  :global {
+    .ant-card-body {
+      min-height : calc(100vh - 120px);
+      display    : flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DrawerHOC DrawerHOC should contain Drawer 1`] = `<DrawerHOC />`;

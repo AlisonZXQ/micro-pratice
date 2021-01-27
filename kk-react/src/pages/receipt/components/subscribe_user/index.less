@@ -1,0 +1,73 @@
+.detailC {
+  padding: 0px 10px;
+
+  .opt {
+    height     : 30px;
+    line-height: 30px;
+    color      : @color-black-8;
+    cursor     : pointer;
+
+    &:hover {
+      background: @color-blue-1;
+    }
+  }
+
+  .divider {
+    border   : 1px dashed @color-black-4;
+    transform: scaleY(0.5);
+    margin   : 5px 0px;
+  }
+
+  .des {
+    color      : @color-black-6;
+    height     : 30px;
+    line-height: 30px;
+  }
+
+  .lastWord {
+    position     : relative;
+    left         : -5px;
+    font-family  : PingFangSC-Regular;
+    font-size    : 16px;
+    display      : inline-block;
+    background   : @color-blue-6;
+    border-radius: 100%;
+    width        : 32px;
+    height       : 32px;
+    line-height  : 32px;
+    text-align   : center;
+    color        : @color-white-1;
+    top          : -6px;
+  }
+
+  .group {
+    position : relative;
+    left     : -5px;
+    top      : -6px;
+    font-size: 32px;
+  }
+
+  .overText {
+    display      : inline-block;
+    max-width    : 120px;
+    overflow     : hidden;
+    word-wrap    : normal;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .overGroupText {
+    position     : relative;
+    top          : -6px;
+    display      : inline-block;
+    max-width    : 120px;
+    overflow     : hidden;
+    word-wrap    : normal;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.userCount {
+  color: @color-blue-6;
+}

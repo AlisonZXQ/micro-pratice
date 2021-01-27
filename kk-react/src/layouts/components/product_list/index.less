@@ -1,0 +1,156 @@
+.container {
+  user-select: none;
+  width      : 156px;
+  height     : 42px;
+  padding    : 0px 8px;
+  margin     : 16px 0px 10px 0px;
+
+  .product {
+    position     : relative;
+    width        : 140px;
+    height       : 42px;
+    background   : @color-black-2;
+    border-radius: 6px;
+    border-radius: 6px;
+    cursor       : default;
+
+    .pic {
+      position    : relative;
+      top         : -10px;
+      font-size   : 26px;
+      left        : 10px;
+      margin-right: 15px;
+    }
+
+    .name {
+      line-height: 40px;
+      display    : inline-block;
+      width      : 80px;
+      text-align : center;
+    }
+
+    .icon {
+      position : absolute;
+      right    : 10px;
+      top      : 15px;
+      font-size: 8px;
+    }
+
+    .siderList {
+      position     : relative;
+      width        : 140px;
+      z-index      : 9999;
+      background   : @color-white-1;
+      box-shadow   : 0 2px 8px 0 rgba(25, 34, 46, 0.08);
+      border-radius: 2px;
+      border-radius: 2px;
+      padding      : 2px 0px;
+      max-height   : 300px;
+      overflow     : auto;
+
+      .itemStyle {
+        text-align   : left;
+        height       : 38px;
+        line-height  : 38px;
+        cursor       : pointer;
+
+        .overText {
+          max-width    : 100px;
+          overflow     : hidden;
+          word-wrap    : normal;
+          white-space  : nowrap;
+          text-overflow: ellipsis;
+        }
+
+        .select {
+          padding   : 0px 16px;
+          background: @color-blue-1;
+          color     : @color-blue-6;
+        }
+
+        .noSelect {
+          padding: 0px 16px;
+        }
+
+        &:hover {
+          background: @color-blue-1;
+          color     : @color-blue-6;
+        }
+      }
+
+    }
+
+  }
+}
+
+.collapseContainer {
+  user-select: none;
+  width      : 60px;
+  height     : 42px;
+  padding    : 0px 8px;
+  margin     : 16px 0px 10px 0px;
+
+  .product {
+    position     : relative;
+    right        : 3px;
+    width        : 50px;
+    height       : 42px;
+    background   : @color-black-2;
+    border-radius: 6px;
+    border-radius: 6px;
+    cursor       : default;
+
+    .pic {
+      position : relative;
+      top      : 8px;
+      left     : 12px;
+      font-size: 26px;
+    }
+
+    .siderList {
+      position     : relative;
+      left         : 52px;
+      top          : -25px;
+      width        : 140px;
+      z-index      : 9999;
+      background   : @color-white-1;
+      box-shadow   : 0 2px 8px 0 rgba(25, 34, 46, 0.08);
+      border-radius: 2px;
+      border-radius: 2px;
+      padding      : 2px 0px;
+      max-height   : 300px;
+      overflow     : auto;
+
+      .itemStyle {
+        text-align : left;
+        height     : 38px;
+        line-height: 38px;
+        cursor     : pointer;
+
+        .overText {
+          max-width    : 100px;
+          overflow     : hidden;
+          word-wrap    : normal;
+          white-space  : nowrap;
+          text-overflow: ellipsis;
+        }
+
+        .select {
+          background: @color-blue-1;
+          color     : @color-blue-6;
+          padding   : 0px 16px;
+        }
+
+        .noSelect {
+          padding: 0px 16px;
+        }
+
+        &:hover {
+          background: @color-blue-1;
+          color     : @color-blue-6;
+        }
+      }
+    }
+  }
+
+}

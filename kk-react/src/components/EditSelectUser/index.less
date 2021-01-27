@@ -1,0 +1,70 @@
+.lastWordCommon {
+  font-family  : PingFangSC-Regular;
+  font-size    : 12px;
+  display      : inline-block;
+  background   : @color-blue-6 ;
+  border-radius: 100%;
+  width        : 32px;
+  height       : 32px;
+  line-height  : 32px;
+  text-align   : center;
+  color        :@color-white-1;
+}
+
+.lastWord {
+  position: absolute;
+  left    : -5px;
+  top     : -6px;
+  .lastWordCommon
+}
+
+.lastUneditWord {
+  position: absolute;
+  left    : unset;
+  top     : -6px;
+  .lastWordCommon
+}
+
+.lastWordSelect {
+  position   : absolute;
+  left       : -5px;
+  margin-left: 16px;
+  .lastWordCommon
+}
+
+.label {
+  position     : relative;
+  left         : 12px;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  display      : inline-block;
+  width        : 240px;
+}
+
+.m-menu {
+  overflow: auto;
+  cursor  : pointer;
+
+  .m-item {
+    height       : 34px;
+    line-height  : 34px;
+    margin-bottom: 6px;
+
+    &:hover {
+      background: @color-blue-1;
+    }
+  }
+}
+
+.bgHover {
+  padding      : 2px 8px 2px 6px;
+  border-radius: 2px;
+
+  &:hover {
+    background: @color-black-2;
+  }
+}
+
+.unSelect {
+  color: @color-black-5;
+}

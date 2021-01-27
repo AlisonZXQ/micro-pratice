@@ -1,0 +1,211 @@
+.boardIcon {
+  display        : inline-flex;
+  justify-content: center;
+  align-items    : center;
+  width          : 28px;
+  height         : 28px;
+  background     : @color-blue-6;
+  box-shadow     : 0 0 8px 0 rgba(45, 153, 255, 0.60);
+  border-radius  : 2px;
+
+  .icon {
+    color    : @color-white-1;
+    font-size: 16px;
+  }
+}
+
+.itemStyle {
+  margin-bottom   : 8px;
+  margin-left     : 10px;
+  border-radius   : 2px;
+  background-color: @color-white-1;
+  width           : 236px;
+}
+
+.itemStyle:last-child {
+  margin-bottom   : 8px;
+  margin-left     : 10px;
+}
+
+.changeState {
+  border    : 1px dashed @color-blue-6;
+  text-align: center;
+  background: @color-blue-1;
+
+  &:hover {
+    background: @color-blue-3;
+    color     : @color-blue-6;
+  }
+}
+
+.commonText {
+  font-family: PingFangSC-Medium;
+  font-size  : 14px;
+  color      : @color-black-8;
+  display    : inline-block;
+}
+
+.commonNumber {
+  font-family: PingFangSC-Medium;
+  font-size  : 14px;
+  color      : @color-black-6;
+}
+
+.drop {
+  background   : @color-black-1;
+  border       : 1px solid @color-black-4;
+  border-radius: 2px;
+  margin-right : 16px;
+
+  .header {
+    height       : 32px;
+    background   : @color-white-1;
+    border-radius: 2px;
+    border-bottom: 1px solid @color-black-4;
+    line-height  : 32px;
+    padding      : 0px 10px;
+    margin-bottom: 8px;
+
+    .text {
+      .commonText;
+      margin-right: 10px;
+    }
+
+    .number {
+      .commonNumber;
+    }
+  }
+
+  .dropContainer {
+    display: flex;
+    background-color: @color-black-2;
+  }
+
+  .collapse {
+    width           : 32px;
+    text-align      : center;
+    height          : 100%;
+    padding         : 0px 10px;
+    background-color: #FFFFFF;
+
+    .icon {
+      color    : @color-black-6;
+      font-size: 18px;
+      position : relative;
+      top      : 8px;
+      right    : 2px;
+      cursor   : pointer;
+    }
+
+    .text {
+      .commonText;
+      margin-top   : 10px;
+      margin-bottom: 4px;
+    }
+
+    .number {
+      .commonNumber;
+    }
+  }
+
+  .showChild {
+    background   : @color-black-1;
+    margin-right : 10px;
+    border       : 1px solid @color-black-4;
+    box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.08);
+    border-radius: 2px;
+
+    .text {
+      .commonText;
+      margin   : 8px;
+      font-size: 12px;
+    }
+
+    .number {
+      .commonNumber;
+      font-size: 12px;
+    }
+  }
+
+  .expandIcon {
+    font-size: 18px;
+    transform: rotateZ(180deg);
+    color    : @color-black-6;
+    cursor   : pointer;
+  }
+}
+
+.boardHeader {
+  background   : #FFFFFF;
+  box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.08);
+  border-radius: 2px;
+  height       : 55px;
+  line-height  : 55px;
+  margin-bottom: 10px;
+  padding      : 0px 10px;
+
+  .name {
+    position : relative;
+    top      : 2px;
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size   : 9px;
+    padding-left: 5px;
+    margin-right: 20px;
+    color       : @color-black-6;
+  }
+}
+
+.menu {
+  width     : 200px;
+  padding   : 5px 12px;
+  max-height: 400px;
+  overflow  : auto;
+  box-shadow: 0 2px 16px rgba(25, 34, 46, .120138) !important;
+  border    : unset !important;
+
+  .divider {
+    border-bottom: 1px dashed #dfe1e6;
+    margin       : 5px 12px;
+  }
+
+  .kanban {
+    cursor     : pointer;
+    height     : 36px;
+    line-height: 36px;
+    padding    : 0px 12px;
+
+    .opt {
+      visibility: hidden;
+
+      .delete {
+        position: relative;
+        top     : 1px;
+      }
+
+      .defaultIcon {
+        color: @color-blue-6;
+      }
+
+      .unDefaultIcon {
+        color: @color-black-4;
+      }
+    }
+  }
+
+  .kanban:hover {
+    background: @color-blue-1;
+    color     : @color-blue-6;
+
+    .opt {
+      visibility: visible;
+    }
+  }
+
+}
+
+.empty {
+  margin: 25vh 0px !important;
+}

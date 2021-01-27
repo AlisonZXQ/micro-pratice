@@ -1,0 +1,33 @@
+.name {
+  display  : inline-block;
+  max-width: 80px;
+}
+
+.icon {
+  margin-left: 5px;
+  font-size  : 12px;
+  color      : @color-black-5;
+  height     : 10px;
+  line-height: 10px;
+
+  &:hover {
+    color: @color-black-8;
+  }
+}
+
+.m-menu {
+  max-height: 240px;
+  overflow  : auto;
+  padding   : 0 12px;
+
+  .container {
+    border-top: 1px @color-black-5 solid;
+    margin-top: 5px;
+
+    .m-item {
+      height     : 30px;
+      line-height: 30px;
+    }
+  }
+
+}

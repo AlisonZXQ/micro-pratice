@@ -1,0 +1,29 @@
+.m-menu {
+  max-height: 240px;
+  overflow  : auto;
+  cursor    : pointer;
+
+  .m-item {
+    height     : 32px;
+    line-height: 32px;
+    padding    : 0 12px;
+    color      : @color-blue-6;
+
+    &:hover {
+      background: @color-blue-1;
+    }
+  }
+
+  .activeColor {
+    color: @color-blue-6;
+  }
+}
+
+.hasColor {
+  color: @color-black-5;
+  margin-right: 4px;
+}
+
+.noColor {
+  margin-right: 4px;
+}

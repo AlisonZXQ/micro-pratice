@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`403 should snapshot correctly 1`] = `
+<div
+  className="content root"
+>
+  <div
+    className="m-error-404 f-cb"
+  >
+    <div
+      className="m-pic f-fl"
+    >
+      <img
+        alt="403"
+        src={Object {}}
+      />
+    </div>
+    <div
+      className="m-tip f-fl"
+    >
+      <h1
+        style={
+          Object {
+            "color": "#475669",
+          }
+        }
+      >
+        403
+      </h1>
+      <h2>
+        您暂无权限访问该页面
+      </h2>
+    </div>
+  </div>
+</div>
+`;

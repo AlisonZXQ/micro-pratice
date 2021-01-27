@@ -1,0 +1,131 @@
+.topCardStyle {
+  position  : absolute !important;
+  top       : 0px;
+  z-index   : 100;
+  width     : 100%;
+  box-shadow: 0 2px 16px 0 rgba(139, 157, 175, 0.18);
+}
+
+.otherCardStyle {
+  position: relative;
+  top     : 105px;
+}
+
+.timeFilter {
+  :global {
+    .ant-radio-wrapper {
+      display: block;
+    }
+  }
+}
+
+.dividerStyle {
+  margin: 12px 0px !important;
+}
+
+.weekAims {
+  :global {
+    .ant-form-item-control {
+      line-height: unset;
+    }
+  }
+
+  .overflowAim {
+    height  : 80px;
+    overflow: auto;
+
+    .projectAims {
+      margin-bottom: 5px;
+      line-height  : 20px;
+      background   : @color-black-1;
+      padding      : 2px 5px;
+      color        : @color-blue-6;
+    }
+  }
+}
+
+.queryArea {
+  margin-top: 12px;
+  height    : 56px;
+  background: @color-white-1;
+}
+
+.listStyle {
+  background   : @color-white-1;
+  box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.08);
+  border-radius: 2px 2px 0px 0px;
+}
+
+.checkButton {
+  cursor    : pointer;
+  display   : inline-block;
+  text-align: center;
+  width     : 26px;
+  height    : 20px;
+  background: @color-black-1;
+  box-shadow: 0 0 8px 0 rgba(25, 34, 46, 0.25);
+}
+
+.checkButton:hover {
+  color: @color-blue-6;
+}
+
+// 针对通用模版里程碑特殊处理
+.commonBaseContainer {
+  :global {
+    .ant-form-item-control {
+      line-height: unset !important;
+    }
+  }
+
+  // 高风险样式
+  .riskList {
+    width           : 800px;
+    border-radius   : 4px 2px 2px 4px;
+    background      : @color-black-1;
+    border          : 1px solid @color-black-3;
+    border-left     : 4px solid @color-red-3;
+    height          : 32px;
+    line-height     : 32px;
+    margin-top      : 10px;
+    position: relative;
+
+    .highImg {
+      color: @color-red-6;
+      position: absolute;
+      font-size: 48px;
+      top: -9px;
+      left: 5px;
+    }
+
+    .text {
+      color: @color-black-8;
+    }
+  }
+
+}
+
+.richTextDisplay {
+  img {
+    max-width : 100%;
+    height: auto;
+  }
+
+  overflow-x:auto;
+}
+
+.sendEmailSelect{
+  margin-top: 20px;
+  font-size: 14px;
+  color: @color-black-9;
+  .selectLabel {
+    float: left;
+  }
+  .select{
+    width: 400px;
+  }
+}
+
+.dashedLine {
+  border-top: 1px @color-black-3 dashed;
+}

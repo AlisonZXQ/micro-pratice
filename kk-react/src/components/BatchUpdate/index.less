@@ -1,0 +1,70 @@
+.container {
+}
+
+.menu {
+  width: 200px;
+
+  .header {
+    padding: 0px 10px;
+    height         : 40px;
+    line-height    : 40px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    border-bottom  : 1px solid @color-black-4;
+    font-family    : PingFangSC-Medium;
+    font-size      : 14px;
+    color          : @color-black-9;
+    text-align     : center;
+  }
+
+  .content {
+    padding: 0px 12px;
+  }
+
+  .commonWidth {
+    width: 180px;
+  }
+
+  .divItem {
+    height     : 36px;
+    line-height: 36px;
+    font-family: PingFangSC-Regular;
+    font-size  : 14px;
+    color      : @color-black-9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      color: @color-blue-6;
+    }
+  }
+
+  .disabledDivItem {
+    height     : 36px;
+    line-height: 36px;
+    font-family: PingFangSC-Regular;
+    font-size  : 14px;
+    color      : @color-black-5;
+  }
+
+  .updateKey {
+    .divItem;
+  }
+
+  .disabledUpdateKey {
+    .disabledDivItem;
+  }
+
+  .enableUpdateKey {
+    .divItem;
+    display: block;
+  }
+
+  .backCloseIcon {
+    font-size: 16px;
+    color: @color-black-6;
+    cursor: pointer;
+  }
+}

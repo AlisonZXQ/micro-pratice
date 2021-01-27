@@ -1,0 +1,59 @@
+.container {
+
+  margin: 16px;
+
+  :global {
+    .ant-card-body {
+      padding: 10px;
+    }
+  }
+
+  .requirementPlanIcon {
+    display        : inline-flex;
+    justify-content: center;
+    align-items    : center;
+    width          : 28px;
+    height         : 28px;
+    background     : @color-blue-6;
+    box-shadow     : 0 0 8px 0 rgba(45, 153, 255, 0.60);
+    border-radius  : 2px;
+
+    .icon {
+      color: @color-white-1;
+      font-size: 16px;
+    }
+  }
+
+  .tabsStyle {
+    background-color: @color-white-1;
+    padding         : 10px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+
+    .activeIcon {
+      color       : @color-blue-6;
+      cursor      : pointer;
+      margin-right: 10px;
+    }
+
+    .icon {
+      color       : @color-black-8;
+      cursor      : pointer;
+      margin-right: 10px;
+    }
+
+    .year {
+      float   : right;
+      position: relative;
+      right   : 10px;
+    }
+
+    .tip {
+      position    : relative;
+      top         : 1px;
+      margin-right: 10px;
+      color       : @color-black-5;
+    }
+  }
+}

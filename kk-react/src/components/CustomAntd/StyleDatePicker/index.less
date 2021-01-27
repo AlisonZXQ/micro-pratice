@@ -1,0 +1,28 @@
+.stylePicker {
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+  .select {
+    color: @color-black-8;
+    max-width: 100px;
+    display: inline-block;
+  }
+  .icon {
+    margin-left: 5px;
+    font-size  : 12px;
+    color      :@color-black-5;
+    &:hover {
+      color: @color-black-8;
+    }
+  }
+}
+
+.picker {
+  opacity: 0;
+}
+
+.hiddenPicker {
+  position: absolute;
+  left: -9999px;
+  top: -9999px
+}

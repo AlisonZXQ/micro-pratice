@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="35px" viewBox="0 0 43 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19.0520833,18.7118644 L15.5,23 L11.9479167,18.7118644 L1.99821383,18.7118644 C0.894630804,18.7118644 0,17.8093523 0,16.7093671 L0,2.00249727 C0,0.896548566 0.894337654,0 1.99821383,0 L29.0017862,0 C30.1053692,0 31,0.902512114 31,2.00249727 L31,16.7093671 C31,17.8153158 30.1056623,18.7118644 29.0017862,18.7118644 L19.0520833,18.7118644 Z" id="path-1"></path>
+        <filter x="-30.6%" y="-37.0%" width="161.3%" height="182.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="战役&amp;里程碑" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="气泡面板-Popover-基本样式" transform="translate(6.000000, 5.000000)">
+            <g id="Group-15">
+                <g id="Rectangle-1-Copy-3" transform="translate(15.500000, 11.500000) scale(-1, 1) translate(-15.500000, -11.500000) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#1885F2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <text id="今天" font-family="PingFangSC-Regular, PingFang SC" font-size="10" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="5" y="13">今天</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

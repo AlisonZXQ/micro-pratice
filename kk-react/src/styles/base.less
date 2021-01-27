@@ -1,0 +1,97 @@
+// antd色值覆盖
+@primary-color: @color-blue-6;
+
+@header-height     : 50px;
+@nav-head-icon-size: 14px;
+@nav-side-icon-size: 18px;
+@nav-bg            : #374259;
+@nav-color         : #C2C7CC;
+@nav-side-bg       : #1F2633;
+
+@bg-color          : @color-black-3;
+@bg-color-secondary: #F5F5F7;
+
+// 四种状态的色值，如：（未部署，部署中，部署成功，部署失败）
+@status-success  : #00A854;
+@status-process  : @color-blue-6;
+@status-error    : #F04134;
+@status-wait     : #FFAA00;
+@status-undefined: @color-black-5;
+@status-newBug   : #E86C62;
+@status-closedBug: #82C5BE;
+@status-undo     : #C2C7CC;
+
+@text-color           : #19222e;
+@text-color-secondary : #82888F;
+@text-color-active    : @color-black-5;
+
+// 以下存放需要覆盖antd的变量
+@heading-color          : #222;
+@text-color             : @color-black-9;
+@text-color-secondary   : #82888F;
+@border-radius-base     : 2px;
+
+
+// Border color
+@border-color-base      : @color-black-4;
+@border-color-split     : #E4E7EB;
+
+
+// LINK
+@link-color             : @primary-color;
+@link-hover-color       : @color-blue-5;
+@link-active-color      : @color-blue-7;
+
+// Buttons
+@btn-default-color      : @heading-color;
+
+// Card
+@card-padding-base: 20px;
+@card-padding-wider: 20px;
+@card-head-padding: 18px;
+
+
+// Modal
+@modal-mask-bg: rgba(20, 22, 26, 0.7);
+
+
+// Tabs
+.@{tab-prefix-cls} {
+  &-ink-bar {
+    height: 3px;
+  }
+  &-nav &-tab-active {
+    font-weight: normal;
+  }
+}
+
+// Radio
+.@{radio-prefix-cls}{
+  &-inner {
+    &:after {
+      border-radius: 50%;
+    }
+  }
+}
+
+// Input
+@input-height-lg             : 32px;
+@input-placeholder-color     : #C2C7CC;
+
+// Select
+.@{select-prefix-cls} {
+  &-selection--multiple {
+    .@{select-prefix-cls}-selection__choice {
+      background-color: @color-black-3;
+      border: 1px solid @color-black-3;
+    }
+  }
+}
+
+// Tooltip
+@tooltip-bg: rgba(0, 0, 0, .8);
+.@{tooltip-prefix-cls} {
+  &-inner {
+    padding: 10px;
+  }
+}

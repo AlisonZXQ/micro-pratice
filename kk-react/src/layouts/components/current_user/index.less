@@ -1,0 +1,42 @@
+.name {
+  position     : absolute;
+  top          : 10px;
+  display      : inline-block;
+  width        : 35px;
+  height       : 35px;
+  background   : rgba(45, 153, 255, 1);
+  line-height  : 35px;
+  text-align   : center;
+  box-shadow   : 0px 2px 8px 0px rgba(25, 34, 46, 0.08);
+  border-radius: 100%;
+  color        : #ffffff;
+  margin-left  : 20px;
+}
+
+.dropMenu {
+  :global {
+    .ant-dropdown-menu {
+      right: 10px;
+      top  : 10px;
+    }
+
+    .ant-dropdown-menu-item {
+      &:hover {
+        a {
+          color: @color-blue-6 !important;
+        }
+      }
+    }
+  }
+}
+
+.dropDownName {
+  color: @color-black-6;
+}
+
+.downIcon {
+  font-size  : 8px;
+  position   : relative;
+  top        : -2px;
+  margin-left: 5px;
+}

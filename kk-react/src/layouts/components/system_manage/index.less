@@ -1,0 +1,77 @@
+// 侧边
+.sider {
+  flex      : 0 0 156px;
+  position  : relative;
+  box-shadow: 2px 0 8px 0 rgba(25, 34, 46, 0.08);
+  z-index   : 99;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .ulStyle {
+    list-style: none;
+    padding   : 0px;
+
+    .returnProduct {
+      cursor          : pointer;
+      text-align      : center;
+      margin          : 16px 8px;
+      height          : 42px;
+      line-height     : 42px;
+      background-color:@color-black-2;
+      opacity         : initial;
+      border-radius   : 6px;
+      font-family     : PingFangSC-Regular;
+      font-size       : 14px;
+      color           : @color-black-8;
+    }
+
+    .settingItem {
+      position    : relative;
+      display     : block;
+      height      : 43px;
+      line-height : 43px;
+      font-family : PingFangSC-Regular;
+      color       : @color-black-6;
+      cursor      : pointer;
+      padding-left: 30px;
+
+      &:hover {
+        color: @color-blue-6;
+      }
+
+      .ItemArrow {
+        position   : absolute;
+        top        : 0px;
+        right      : 10px;
+        line-height: 42px;
+        color      : @color-black-4;
+        font-size  : 12px;
+      }
+    }
+
+    .settingItemActive {
+      color     : @color-blue-6;
+      box-shadow: 0 0 12px 0 rgba(25, 34, 46, 0.22);
+      opacity   : initial;
+
+      .ItemArrow {
+        color: @color-black-4;
+      }
+
+      &:after {
+        position        : absolute;
+        left            : 0;
+        top             : 0;
+        width           : 2px;
+        height          : 43px;
+        display         : block;
+        background-color: @color-blue-6;
+        content         : '';
+      }
+    }
+  }
+}
+
+.return {
+  color: @color-black-8;
+}

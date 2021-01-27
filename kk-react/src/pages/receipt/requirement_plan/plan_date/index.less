@@ -1,0 +1,117 @@
+.container {
+  position  : relative;
+  margin-top: 16px;
+
+  .icon {
+    margin-left: 5px;
+    font-size  : 12px;
+    color      : @color-black-5;
+    cursor     : pointer;
+
+    &:hover {
+      color: @color-black-8;
+    }
+  }
+
+  .allCollapseIcon {
+    .icon;
+    transform: rotate(-90deg);
+  }
+
+  .allExpandIcon {
+    .icon;
+  }
+
+  .left {
+    width           : 270px;
+    display         : inline-block;
+    overflow-x      : hidden;
+    background-color:@color-white-1;
+    margin-right    : 10px;
+    text-align      : center;
+    vertical-align  : top;
+
+    .collapseIcon {
+      .icon;
+      position : relative;
+      top      : -110px;
+      right    : 5px;
+      transform: rotate(-90deg);
+    }
+
+    .expandIcon {
+      .icon;
+      position: relative;
+      top     : -110px;
+      right   : 5px;
+    }
+
+    .objectiveTitle {
+      width        : 230px;
+      display      : inline-block;
+      background   :@color-white-1;
+      height       : 32px;
+      line-height  : 32px;
+      margin-bottom: 12px;
+      text-align   : left;
+    }
+
+    .objective {
+      display: inline-block;
+      width  : 230px;
+      height : 100px;
+
+      .opt {
+        text-align     : justify;
+        height         : 26px;
+        padding        : 2px 0px;
+        display        : flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .right {
+    display    : inline-block;
+    overflow-x : auto;
+    white-space: nowrap;
+    width      : calc(100% - 280px);
+
+    .requirementTitle {
+      width        : 230px;
+      display      : inline-block;
+      height       : 40px;
+      background   :@color-white-1;
+      text-align   : center;
+      height       : 32px;
+      line-height  : 32px;
+      margin-bottom: 12px;
+      margin-right : 10px;
+    }
+
+    .requirementColumn {
+      width         : 230px;
+      display       : inline-block;
+      vertical-align: top;
+      margin-right  : 10px;
+
+      .requirement {
+        float        : left;
+        width        : 230px;
+        height       : 100px;
+        margin-bottom: 6px;
+      }
+
+      .requirement:last-child {
+        margin-bottom: 30px;
+      }
+
+      .collaseCard {
+        width        : 230px;
+        height       : 100px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+}

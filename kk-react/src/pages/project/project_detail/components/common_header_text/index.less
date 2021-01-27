@@ -1,0 +1,56 @@
+.container {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0px !important;
+    }
+
+    .ant-form-item-label {
+      color: @color-black-9;
+    }
+
+    .ant-form-item-control {
+      color: @color-black-8;
+    }
+  }
+}
+
+.title {
+  font-size  : 20px;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.inconC {
+  .icon {
+    rotate: 90;
+  }
+}
+
+.editProjectTitle {
+  .checkButton {
+    cursor    : pointer;
+    display   : inline-block;
+    text-align: center;
+    width     : 26px;
+    height    : 20px;
+    background: @color-black-1;
+    box-shadow: 0 0 8px 0 rgba(25, 34, 46, 0.25);
+
+    &:hover {
+      color: @color-blue-6;
+    }
+  }
+
+  .icon {
+    display: none;
+  }
+
+  &:hover {
+    .icon {
+      display: inline-block;
+    }
+  }
+}

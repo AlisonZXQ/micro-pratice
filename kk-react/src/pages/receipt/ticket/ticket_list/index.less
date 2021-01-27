@@ -1,0 +1,94 @@
+.ticketIcon {
+  display        : inline-flex;
+  justify-content: center;
+  align-items    : center;
+  width          : 28px;
+  height         : 28px;
+  background     : @color-blue-6;
+  box-shadow     : 0 0 8px 0 rgba(45, 153, 255, 0.60);
+  border-radius  : 2px;
+
+  .icon {
+    color: @color-white-1;
+  }
+}
+
+.noneContent {
+  .tableContent;
+  :global {
+    .ant-table-body {
+      min-height: 300px;
+    }
+  }
+}
+
+.tableContent {
+  padding   : 0px 20px;
+  background: @color-white-1;
+  overflow  : auto;
+  .table {
+    min-height: 300px;
+  }
+
+  :global {
+    .ant-table-thead {
+      white-space: nowrap;
+    }
+
+    .ant-table-tbody>tr>td {
+      white-space   : nowrap;
+      color         : @color-black-8;
+      padding       : 10px 16px;
+      vertical-align: middle;
+      border-bottom : 1px @color-black-1 solid;
+    }
+  }
+
+  .operateButton {
+    display      : inline-block;
+    width        : 86px;
+    height       : 32px;
+    line-height  : 32px;
+    text-align   : center;
+    border       : 1px @color-blue-6 solid;
+    color        : @color-blue-6;
+    border-radius: 2px;
+    cursor       : pointer;
+
+    &:hover {
+      border: 1px @color-blue-5 solid;
+      color : @color-blue-5;
+    }
+  }
+}
+
+.rtotalStyle {
+  background   : @color-black-2;
+  display      : inline-block;
+  line-height  : 1em;
+  padding      : 3px 5px;
+  font-size    : 12px;
+  border-radius: 4px 4px;
+  cursor       : default;
+}
+
+.tagStyle {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  background: @color-black-4;
+}
+
+.filterArea {
+  padding-top: 18px;
+  padding-bottom: 2px;
+  background: @color-white-1;
+}
+
+.queryArea {
+  line-height: 48px;
+  position: relative;
+  background: @color-white-1;
+}

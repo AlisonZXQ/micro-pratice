@@ -1,0 +1,178 @@
+.lastWordCommon {
+  font-family  : PingFangSC-Regular;
+  font-size    : 12px;
+  display      : inline-block;
+  background   : @color-blue-6;
+  border-radius: 100%;
+  width        : 32px;
+  height       : 32px;
+  line-height  : 32px;
+  text-align   : center;
+  color        :@color-white-1;
+}
+
+
+.container {
+  margin-bottom: 20px;
+
+  :global {
+    .ant-card-body {
+      padding: 0px !important;
+    }
+  }
+
+  .comment {
+    display   : flex;
+    margin-top: 10px;
+
+    .commentUser {
+      flex    : 0 0 45px;
+      position: relative;
+      display : inline-block;
+      top     : 4px;
+
+      .lastWord {
+        position: absolute;
+        .lastWordCommon;
+      }
+    }
+
+    .commentForm {
+      flex: 1 1 auto;
+    }
+
+  }
+
+  .parent {
+    display   : flex;
+    // height : 40px;
+    margin-top: 10px;
+
+    .parentUser {
+      flex    : 0 0 45px;
+      position: relative;
+      display : inline-block;
+
+      .lastWord {
+        position: absolute;
+        .lastWordCommon;
+      }
+    }
+
+    .parentDetail {
+      flex: 1 1 auto;
+
+      .show {
+        .icon {
+          visibility: hidden;
+        }
+      }
+
+      .time {
+        font-family: PingFangSC-Medium;
+        font-size  : 14px;
+        color      : @color-black-9;
+      }
+
+      .body {
+        font-family: PingFangSC-Regular;
+        font-size  : 14px;
+        color      : @color-black-8;
+        word-break : break-all;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      &:hover {
+        .icon {
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  .childrenBody {
+    position: relative;
+
+    .arrow {
+      position : relative;
+      top      : 8px;
+      left     : 100px;
+      font-size: 18px;
+    }
+
+    .childrenC {
+      background : @color-black-1;
+      margin-left: 10px;
+      padding    : 5px;
+
+      .children {
+        display      : flex;
+        // height    :40px;
+        background   : @color-black-1;
+        margin-bottom: 10px;
+
+        .parentUser {
+          flex    : 0 0 50px;
+          position: relative;
+          display : inline-block;
+
+          .lastWord {
+            position: absolute;
+            .lastWordCommon;
+          }
+        }
+
+        .parentDetail {
+          flex: 1 1 auto;
+
+          .show {
+            .icon {
+              visibility: hidden;
+            }
+          }
+
+          &:hover {
+            .icon {
+              visibility: visible;
+            }
+          }
+
+          .time {
+            font-family: PingFangSC-Medium;
+            font-size  : 14px;
+            color      : @color-black-9;
+          }
+
+          .body {
+            font-family: PingFangSC-Regular;
+            font-size  : 14px;
+            color      : @color-black-8;
+            word-break : break-all;
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+.sendButton {
+  background: @color-black-2;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  color: @color-black-8;
+}
+
+.reply {
+  background-color: @color-black-2;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}

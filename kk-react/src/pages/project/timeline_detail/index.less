@@ -1,0 +1,39 @@
+.head {
+  padding-left: 20px;
+  height: 54px;
+  background: @color-white-1;
+  box-shadow: 0px 2px 16px rgba(139, 157, 175, 0.18);
+}
+
+.timeLine {
+  background: @color-white-1;
+  box-shadow: 0px 0px 8px rgba(25, 34, 46, 0.0788352);
+  border-radius: 2px;
+  .timeContent {
+    height: calc(100vh - 250px);
+    overflow: auto;
+    .timeItem {
+      padding: 10px 20px;
+      :global {
+        .ant-timeline-item-last {
+          padding-bottom: 0px;
+        }
+      }
+      .timeTag {
+        font-family: PingFang SC;
+        color: @color-black-8;
+        background: @color-black-1;
+        padding: 4px 12px;
+      }
+    }
+    .timeItem:last-child {
+      padding: 0px 20px 10px 20px;
+    }
+  }
+}
+
+.emptyTip {
+  color: @color-black-6;
+  padding-bottom: 20px;
+  display: block;
+}

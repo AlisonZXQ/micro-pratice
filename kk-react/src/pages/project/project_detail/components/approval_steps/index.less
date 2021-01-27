@@ -1,0 +1,31 @@
+.stepsStyle {
+  :global {
+
+    .ant-steps-item-container {
+
+      .ant-steps-item-tail:after {
+        height: 2px !important;
+      }
+    }
+
+    .ant-steps-item-finish {
+      .ant-steps-item-container {
+        .ant-steps-item-tail:after {
+          background-color: @color-blue-6 !important;
+        }
+      }
+    }
+
+  }
+
+  .icon {
+    font-size: 22px;
+    position : relative;
+    top      : -7px;
+    left     : -6px;
+  }
+
+  .greyName {
+    color: @color-black-6;
+  }
+}

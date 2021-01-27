@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@src/*": ["src/*"],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@shared/*": [
+        "src/shared/*"
+      ],
+      "@tests/*": [
+        "src/tests/*"
+      ],
+    },
+    "allowJs": true,
+    "target": "es5",
+    "outDir": "./localConfig/",
+    "module": "es6",
+    "lib": ["es6", "dom", "es2017"],
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "removeComments": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports":true,
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "src/**/*",
+  ],
+  "compileOnSave": true,
+  "@@/*": ["src/.umi/*"]
+}

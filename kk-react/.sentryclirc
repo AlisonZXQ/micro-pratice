@@ -1,0 +1,7 @@
+[defaults]
+url=https://music-sentry.hz.netease.com/
+project=easy-project-react
+org=music163
+
+[auth]
+token=b9b116d4f6514c6bbc137885d03909201b8d32bb3ac04534b835b17c64930b1e

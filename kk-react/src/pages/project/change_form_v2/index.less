@@ -1,0 +1,57 @@
+.backCard {
+  :global {
+    .ant-card-body {
+      padding     : 0px;
+      height      : 52px;
+      line-height : 52px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.changeTable {
+  .title {
+    background : @color-black-1;
+    min-height : 40px;
+    font-weight: 600;
+    color      : @color-black-9;
+    padding    : 0px 10px;
+    display    : flex;
+    align-items: center;
+  }
+
+  .itemRowStyle {
+    border-bottom: 1px solid @color-black-1;
+    min-height   : 40px;
+    padding      : 0px 10px;
+
+    .obj {
+      display    : inline-block;
+      height     : 40px;
+      line-height: 40px;
+    }
+
+    .detailStyle {
+      min-height   : 40px;
+      border-bottom: 1px solid @color-black-1;
+      display      : flex;
+      align-items  : center;
+
+      img {
+        height: auto;
+        width : 150px;
+      }
+    }
+
+    .detailStyle:last-child {
+      border-bottom: unset;
+    }
+  }
+}
+
+.changeButton {
+  position: relative;
+  right   : 10px;
+  top     : -5px;
+  float   : right;
+}

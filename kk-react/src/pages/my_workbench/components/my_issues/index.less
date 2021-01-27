@@ -1,0 +1,48 @@
+.opIcon {
+  font-size: 32px;
+  float: right;
+  position: relative;
+  top: -9px;
+  margin-left: 10px;
+  &:hover {
+    .icon {
+      display: none;
+    }
+    .hoverIcon {
+      display: inline-block;
+    }
+  }
+  .icon {
+    cursor: pointer;
+  }
+  .hoverIcon {
+    cursor: pointer;
+    display: none;
+  }
+}
+
+.optMenu {
+  background: @color-white-1;
+  width: 128px;
+  line-height: 48px;
+  border: 1px solid @color-black-3;
+  box-shadow: 0 2px 14px 0 rgba(25,34,46,0.16);
+  border-radius: 2px;
+  .menu {
+    cursor: pointer;
+    padding: 0px 12px;
+    display: block;
+    user-select:none;
+    .icon {
+      display: none;
+      float: right;
+      margin-top: 16px;
+    }
+  }
+  .activeMenu {
+    color: #008CFF;
+    .icon {
+      display: inline-block;
+    }
+  }
+}

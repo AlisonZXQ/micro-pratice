@@ -1,0 +1,348 @@
+.twoColumnsContainer {
+  background-color: hsl(0, 0%, 100%);
+  margin-top      : 10px;
+  box-shadow      : 0 0 8px 0 rgba(25, 34, 46, 0.08);
+  border-radius   : 2px;
+
+  .dateIcon {
+    font-size  : 8px;
+    color      : @color-black-9;
+    padding-top: 3px;
+  }
+
+  :global {
+    .ant-table-row-expand-icon {
+      position: relative;
+      top     : -3px;
+    }
+  }
+
+  .left {
+    position  : static;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : calc(100vh - 200px);
+    padding   : 8px;
+
+    .alone {
+      background   :@color-white-1;
+      border       : 1px solid @color-black-4;
+      box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.08);
+      width        : calc(100% - 16px);
+      margin-left  : 10px;
+      margin-bottom: 10px;
+      height       : 32px;
+      line-height  : 32px;
+      cursor       : pointer;
+
+      .name {
+        font-family: PingFangSC-Regular;
+        font-size  : 14px;
+        color      : @color-black-9;
+        margin-left: 10px;
+      }
+    }
+
+    .aloneActive {
+      .alone;
+      background: @color-blue-1;
+      border    : 1px solid @color-blue-6;
+    }
+
+    .objective {
+      padding      : 8px 8px;
+      width        : calc(100% - 16px);
+      cursor       : pointer;
+      border       : 1px solid @color-black-4;
+      box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.08);
+      margin-bottom: 10px;
+      margin-left  : 10px;
+      background   : @color-black-1;
+
+      .twoLine {
+        overflow          : hidden;
+        text-overflow     : ellipsis;
+        display           : -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp        : 2;
+        word-break: break-all;
+
+        .name {
+          margin-left: 5px;
+        }
+      }
+
+      .state {}
+    }
+
+    .objectiveActive {
+      .objective;
+      background: @color-blue-1;
+      border    : 1px solid @color-blue-6;
+    }
+  }
+
+  .right {
+    background-color: @color-white-1;
+    height          : calc(100vh - 200px);
+    overflow        : auto;
+    position        : static;
+
+    .requirement {
+      .header {
+        .name {
+          font-family: PingFangSC-Medium;
+          font-size  : 14px;
+          color      : @color-black-9;
+          margin-left: 10px;
+        }
+      }
+
+      .content {
+        position: relative;
+        height: calc(100vh - 300px);
+        margin: 10px 10px 0px 10px;
+
+        :global {
+          .ant-calendar-picker {
+            .ant-input {
+              border : unset;
+              padding: unset;
+            }
+          }
+        }
+
+        .title {
+          border-radius: 2px;
+          background: @color-black-1;
+          color: @color-black-9;
+          font-weight: 700;
+          font-size: 12px;
+          .item {
+            padding: 12px 16px;
+            width: 15%;
+            display: inline-table;
+            vertical-align: middle;
+            white-space: nowrap;
+            overflow-wrap: break-word;
+          }
+          .littleItem {
+            width: 5%;
+          }
+          .bigItem {
+            width: 20%;
+          }
+        }
+        .table {
+          overflow: auto;
+          height: calc(100vh - 390px);
+          .column {
+            .title;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            background: @color-white-1;
+            border-bottom: 1px @color-black-1 solid;
+            &:hover {
+              background: @color-black-1;
+            }
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+
+        }
+
+        .bottom {
+          position: absolute;
+          width: 100%;
+          bottom: 0px;
+          .footerCheck {
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+
+    .leftLine {
+      width           : 2px;
+      background-color: @color-black-3;
+      position        : absolute;
+      top             : 0px;
+      height          : calc(100vh - 200px);
+      cursor          : pointer;
+
+      .icon {
+        position     : absolute;
+        top          : 35vh;
+        left         : -10px;
+        display      : inline-block;
+        width        : 26px;
+        height       : 26px;
+        border-radius: 50%;
+        background   : @color-white-1;
+        border       : 1px solid @color-black-4;
+        box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.12);
+        text-align   : center;
+        line-height  : 26px;
+        cursor       : pointer;
+        z-index      : 999;
+      }
+
+      &:hover {
+        background-color: @color-blue-6;
+      }
+    }
+  }
+}
+
+.oneColumnsContainer {
+  position        : relative;
+  background-color: @color-white-1;
+  margin-top      : 10px;
+  box-shadow      : 0 0 8px 0 rgba(25, 34, 46, 0.08);
+  border-radius   : 2px;
+  height          : calc(100vh - 210px);
+
+  .body {
+    margin: 16px 16px 0px 16px;
+
+    .title {
+      height      : 40px;
+      line-height : 40px;
+      font-family : PingFangSC-Medium;
+      font-size   : 12px;
+      color       : @color-black-9;
+      padding-left: 10px;
+    }
+
+    .content {
+      height  : calc(100vh - 250px);
+      overflow: auto;
+
+      .item {
+        background   : @color-black-1;
+        border       : 1px solid @color-black-3;
+        height       : 40px;
+        margin-bottom: 16px;
+        line-height  : 40px;
+        padding-left : 10px;
+        cursor       : pointer;
+      }
+    }
+  }
+
+  .rightLine {
+    width           : 2px;
+    background-color: @color-black-3;
+    position        : absolute;
+    right           : 8px;
+    top             : 0px;
+    height          : calc(100vh - 210px);
+    cursor          : pointer;
+
+    .icon {
+      position     : relative;
+      right        : 12px;
+      top          : 30vh;
+      display      : inline-block;
+      width        : 26px;
+      height       : 26px;
+      border-radius: 50%;
+      background   : @color-white-1;
+      border       : 1px solid @color-black-4;
+      box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.12);
+      text-align   : center;
+      line-height  : 26px;
+      cursor       : pointer;
+      z-index      : 999;
+
+      .iconLeft {
+        transform: rotateZ(180deg);
+        position : relative;
+        top      : -1px;
+        left     : -1px;
+      }
+    }
+
+    &:hover {
+      background-color: @color-blue-6;
+      ;
+    }
+  }
+}
+
+// 批量编辑
+.menu {
+  width: 300px;
+
+  .header {
+    padding        : 0px 10px;
+    height         : 40px;
+    line-height    : 40px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    border-bottom  : 1px solid @color-black-4;
+    font-family    : PingFangSC-Medium;
+    font-size      : 14px;
+    color          : @color-black-9;
+    text-align     : center;
+  }
+
+  .search {
+    padding: 8px;
+  }
+
+  .content {
+    padding-left: 12px;
+    height      : 250px;
+    overflow    : auto;
+  }
+
+  .commonWidth {
+    width: 280px;
+  }
+
+  .divItem {
+    height         : 36px;
+    line-height    : 36px;
+    font-family    : PingFangSC-Regular;
+    font-size      : 14px;
+    color          : @color-black-9;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    cursor         : pointer;
+
+    &:hover {
+      color: @color-blue-6;
+    }
+  }
+
+  .disabledDivItem {
+    height     : 36px;
+    line-height: 36px;
+    font-family: PingFangSC-Regular;
+    font-size  : 14px;
+    color      : @color-black-5;
+  }
+
+  .updateKey {
+    .divItem;
+  }
+
+  .disabledUpdateKey {
+    .disabledDivItem;
+  }
+
+  .backCloseIcon {
+    font-size: 16px;
+    color    : @color-black-6;
+    cursor   : pointer;
+  }
+}
+
+.empty {
+  padding: 20vh 0px;
+}

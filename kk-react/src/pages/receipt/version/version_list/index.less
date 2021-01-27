@@ -1,0 +1,162 @@
+.versionIcon {
+  display        : inline-flex;
+  justify-content: center;
+  align-items    : center;
+  width          : 28px;
+  height         : 28px;
+  background     : @color-blue-6;
+  box-shadow     : 0 0 8px 0 rgba(45, 153, 255, 0.60);
+  border-radius  : 2px;
+
+  .icon {
+    // font-size: 28px;
+    color: @color-white-1;
+  }
+}
+
+.centerStyle {
+  border       : 1px solid @color-black-1;
+  background   : @color-white-1;
+  padding      : 10px;
+  border-radius: 2px;
+
+  .centerScroll {
+    height  : calc(62vh + 81px);
+    overflow: auto;
+    .centerTime {
+      color: @color-black-6;
+    }
+  }
+}
+
+.rightStyle {
+  border       : 1px solid @color-black-1;
+  border-left  : 1px @color-black-4 solid;
+  background   : @color-white-1;
+  padding      : 10px;
+  border-radius: 2px;
+
+  .rightContent {
+    height: calc(62vh - 35px);
+  }
+}
+
+.headerStyle {
+  align-items: center;
+
+  .title {
+    font-weight: bold;
+    font-size  : 16px;
+    cursor     : pointer;
+    line-height: 16px;
+  }
+
+  .overDay {
+    color: @color-red-6;
+  }
+}
+
+.searchButton {
+  button {
+    padding: 0px 10px;
+  }
+}
+
+.checkButton {
+  cursor    : pointer;
+  display   : inline-block;
+  text-align: center;
+  width     : 26px;
+  height    : 20px;
+  background: @color-black-1;
+  margin-top: 5px;
+  box-shadow: 0 0 8px 0 rgba(25, 34, 46, 0.25);
+}
+
+.checkButton:hover {
+  color: @color-blue-6;
+}
+
+.cardStyle {
+  :global {
+    .ant-card-body {
+      padding: 10px;
+    }
+  }
+}
+
+.itemBorderBottom {
+  border       : 1px solid @color-black-4;
+  border-bottom: none;
+  position     : relative;
+}
+
+.itemBorderBottom:last-child {
+  border-bottom: 1px solid @color-black-4;
+}
+
+
+.headerTitle {
+  margin-left  : 8px;
+  margin-right : 1px;
+  height       : 44px;
+  line-height  : 44px;
+  padding      : 0px 8px;
+  background   : rgb(245, 247, 249);
+  border       : 1px solid rgb(223, 225, 230);
+  border-bottom: unset;
+  font-family  : PingFang SC;
+  font-style   : normal;
+  font-weight  : 600;
+  font-size    : 14px;
+  color        : @color-black-8;
+}
+
+.headTag {
+  border-radius: 2px;
+  background: @color-blue-2;
+  padding: 0px 5px;
+  color: @color-blue-6;
+}
+
+.descriptionStyle {
+  max-width: 80%;
+  position: relative;
+  top: 3px;
+  color: @color-black-8;
+}
+
+.versionQuery {
+  height: 44px;
+  line-height: 44px;
+  padding: 0px 12px;
+  .left {
+    font-family: PingFangSC-Medium;
+    color: @color-black-9;
+  }
+  .right {
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: @color-black-6;
+    .text {
+      margin-right: 6px;
+    }
+    .icon {
+      font-size: 14px;
+      color: @color-black-5;
+      cursor: pointer;
+      &:hover {
+        color: @color-black-6;
+      }
+    }
+    .menu {
+      background: @color-white-1 !important;
+      box-shadow: 0 2px 6px 0 rgba(25,34,46,0.08);
+      border-radius: 2px;
+    }
+  }
+}
+
+.emptyTip {
+  color: @color-black-6;
+}

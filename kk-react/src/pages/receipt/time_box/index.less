@@ -1,0 +1,237 @@
+.container {
+  margin       : 16px;
+  margin-bottom: 0px;
+  overflow     : hidden;
+}
+
+.timeBoxIcon {
+  display        : inline-flex;
+  justify-content: center;
+  align-items    : center;
+  width          : 28px;
+  height         : 28px;
+  background     : @color-blue-6;
+  box-shadow     : 0 0 8px 0 rgba(45, 153, 255, 0.60);
+  border-radius  : 2px;
+
+  .icon {
+    color    : @color-white-1;
+    font-size: 16px;
+  }
+}
+
+.header {
+  background: @color-white-1;
+  padding   : 10px 0px;
+
+  .dateRange {
+    text-align   : center;
+    margin-bottom: 10px;
+
+    .icon {
+      color : @color-black-5;
+      cursor: pointer;
+    }
+
+    .leftIcon {
+      .icon;
+      margin-right: 10px;
+    }
+
+    .rightIcon {
+      .icon;
+      transform  : rotateZ(180deg);
+      margin-left: 10px;
+    }
+
+    .date {
+      font-family: PingFangSC-Semibold;
+      font-size  : 16px;
+      color      : @color-black-9;
+      text-align : center;
+    }
+
+    .rightDatePicker {
+      position: absolute;
+      right   : 18px;
+    }
+
+    .total {
+      color: @color-blue-6;
+    }
+  }
+
+  .dateContent {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+
+    .middle {
+      width   : 100%;
+      overflow: hidden;
+
+      ul {
+        transition : left 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+        position   : relative;
+        padding    : 0px;
+        list-style : none;
+        white-space: nowrap;
+
+        li {
+          cursor: pointer;
+          position             : relative;
+          display              : inline-block;
+          border-radius        : 8px;
+          padding              : 8px 0px;
+
+          height     : 50px;
+          line-height: 50px;
+
+          .day {
+            display      : inline-block;
+            width        : 32px;
+            height       : 32px;
+            background   : @color-white-1;
+            border       : 1px solid @color-black-5;
+            margin-right : 15px;
+            border-radius: 4px;
+            line-height  : 32px;
+            text-align   : center;
+
+            position: relative;
+            top     : -8px
+          }
+
+          .firstDay {
+            .day;
+            line-height: 15px;
+            font-size  : 12px;
+
+            position: relative;
+            top     : -2px;
+          }
+
+          .today {
+            .day;
+            background: @color-blue-6;
+            border    : 1px solid @color-blue-6;
+            text-align: center;
+
+            .text {
+              font-family: PingFangSC-Medium;
+              font-size  : 14px;
+              color      : @color-white-1;
+            }
+          }
+
+          .firstToday {
+            .today;
+            line-height: 15px;
+            font-size  : 12px;
+            color      : @color-white-1;
+
+            position: relative;
+            top     : -2px;
+          }
+
+          .weekend {
+            .day;
+            background: @color-black-2;
+            border    : 1px solid @color-black-6;
+            text-align: center;
+          }
+
+          .firstWeekend {
+            .weekend;
+            line-height: 15px;
+            font-size  : 12px;
+
+            position: relative;
+            top     : -2px;
+          }
+        }
+
+        .timeBoxActive {
+          border: 2px solid @color-blue-6;
+        }
+      }
+
+    }
+  }
+
+  .done {
+    background: rgba(189, 200, 211, 0.10);
+    border    : 1px solid @color-black-3;
+  }
+
+  .doing {
+    background: rgba(45, 153, 255, 0.10);
+    border    : 1px solid @color-blue-2;
+  }
+
+  .todo {
+    background: rgba(0, 191, 104, 0.10);
+    border    : 1px solid @color-cyan-3;
+  }
+}
+
+.content {
+  position  : relative;
+  background: @color-white-1;
+  padding   : 10px;
+  height    : calc(100vh - 240px);
+
+  .icon {
+    font-size  : 10px;
+    margin-left: 5px;
+    position   : relative;
+    top        : -1px;
+  }
+}
+
+.titleHour {
+  margin-left: 10px;
+  font-family: PingFangSC-Regular;
+  font-size  : 12px;
+  color      : @color-black-6;
+}
+
+.timeBoxRule {
+  .timeBegin {
+    font-family : PingFangSC-Medium;
+    font-size   : 14px;
+    color       : @color-black-6;
+    margin-right: 10px;
+  }
+}
+
+.tip {
+  font-family: PingFangSC-Regular;
+  font-size  : 12px;
+  color      : @color-black-6;
+  line-height: 17px;
+  margin-top : 10px;
+}
+
+.timeBoxTable {
+  margin: 0px 10px;
+
+  .tip {
+    position    : relative;
+    top         : 0px;
+    left        : 5px;
+    margin-right: 10px;
+    color       : @color-black-5;
+  }
+
+  .empty {
+    margin: 22vh;
+  }
+
+  .batchUpdate {
+    position     : absolute;
+    width        : 100%;
+    bottom       : 10px;
+    padding-right: 30px;
+  }
+}

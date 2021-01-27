@@ -1,0 +1,211 @@
+.allFormBottom {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.contentFirst {
+  height  : calc(~'100vh - 120px') !important;
+  overflow: auto;
+}
+
+.contentSecond {
+  height  : calc(~'100vh - 200px') !important;
+  overflow: auto;
+}
+
+.time {
+  position     : relative;
+  bottom       : 0px;
+  height       : 80px;
+  background   : @color-white-1;
+  line-height  : 30px;
+  text-align   : center;
+  color        : @color-black-7;
+  padding      : 10px 0px;
+  border-top   : 1px solid @color-black-3;
+  border-bottom: 1px solid @color-black-3;
+}
+
+.foot {
+  position   : relative;
+  bottom     : 0px;
+  height     : 60px;
+  line-height: 60px;
+  text-align : center;
+  box-shadow : 0 2px 8px 0 rgba(25, 34, 46, 0.08);
+  background : #FFFFFF;
+}
+
+.ul {
+  height          : 170px;
+  padding         : 0px;
+  margin          : 0px;
+  list-style      : none;
+  width           : 840px;
+  margin-left     : 10px;
+
+  li {
+    float       : left;
+    height      : 150px;
+    width       : 120px;
+    margin-right: 10px;
+    margin-left : 10px;
+
+    .designStyle {
+      width        : 120px;
+      height       : 150px;
+      cursor       : pointer;
+      border       : 1px solid #E1E2E5;
+      border-radius: 4px;
+      background: #fff;
+
+      &:hover {
+        background: #E5F3FF !important;
+      }
+
+      .title {
+        font-family: PingFang SC;
+        font-style : normal;
+        font-weight: 500;
+
+        font-size    : 16px;
+        text-align   : center;
+        height       : 20px;
+        line-height  : 20px;
+        margin-bottom: 10px;
+        margin-top   : 10px;
+      }
+
+      .selectTitle {
+        color: @color-white-1;
+      }
+
+      .unSelectTitle {
+        color: @color-black-8;
+      }
+
+      .contentCard {
+        height      : 120px;
+        color       : @color-black-5;
+        margin-left : 8px;
+        margin-right: 8px;
+        font-size   : 12px;
+      }
+    }
+
+    .selectContentCard {
+      color: @color-white-1 !important;
+    }
+
+    .unSelectContentCard {
+      color: @color-black-7;
+    }
+
+    .select {
+      background-color: @color-blue-6;
+    }
+
+    .unSelect {
+      background-color: @color-white-1;
+    }
+
+    .activeDesignStyle {
+      .designStyle;
+      background: @color-blue-6;
+    }
+
+    .arrowContainer {
+      width     : 110px;
+      text-align: center;
+
+      .arrow {
+        font-size : 22px;
+        color     : #F4F4F4;
+        margin-top: 6px;
+        position  : relative;
+        top       : -1px;
+      }
+    }
+  }
+}
+
+.iconRed {
+  display    : inline-block;
+  color      : #f5222d;
+  font-size  : 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+}
+
+.stepCardStyle {
+  border-top   : 1px solid @color-black-3 !important;
+  border-bottom: 1px solid @color-black-3 !important;
+}
+
+.cardStyle {
+  border       : 1px solid @color-white-1 !important;
+  border-radius: 4px !important;
+  margin-bottom: 14px !important;
+
+  .size {
+    display      : inline-flex;
+    height       : 24px;
+    border       : 1px solid @color-blue-6;
+    box-sizing   : border-box;
+    border-radius: 2px;
+    line-height  : 8px;
+    text-align   : center;
+    cursor       : pointer;
+    color        : @color-blue-6;
+    font-size    : 12px;
+    float        : right;
+    padding      : 8px;
+  }
+}
+
+.extraTextInput {
+  width: 70px;
+  border: 1px solid @color-white-1;
+  border-bottom: 1px solid @color-black-9;
+}
+
+.cardStyleRemark {
+  border       : 1px solid @color-white-1 !important;
+  border-radius: 4px !important;
+  margin-bottom: 20px !important;
+}
+
+.topCardStyle {
+  :global {
+    .ant-card-body {
+      padding: 0px 20px;
+    }
+  }
+}
+
+.designTitle {
+  font-size  : 16px;
+  margin     : 10px 0px 10px 20px;
+  font-weight: 500;
+  color      : @color-black-8;
+}
+
+.tagStyle {
+  display      : inline-block;
+  padding      : 0px 10px;
+  height       : 20px;
+  background   : #E6F3FF;
+  border-radius: 19px;
+  color        : #118DFF;
+  font-family  : PingFang SC;
+  font-style   : normal;
+  font-weight  : normal;
+  font-size    : 14px;
+  line-height  : 20px;
+  margin-right : 10px;
+  text-align   : center;
+  cursor       : pointer;
+}

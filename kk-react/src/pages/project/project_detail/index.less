@@ -1,0 +1,322 @@
+.headerC {
+  display: flex;
+
+  .imgC {
+    flex: 0 0 40px;
+
+    .img {
+      font-size   : 32px;
+      margin-top  : 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .textC {
+    flex: 1 1 auto;
+  }
+
+}
+
+.changeIcon {
+  margin-left: 20px;
+
+  .icon {
+    font-size   : 18px !important;
+    position    : relative;
+    top         : 2px;
+    margin-right: 5px;
+  }
+
+  .changeText {
+    color: @color-black-8;
+  }
+
+  .link {
+    margin-left: 5px;
+    color      : @color-blue-6 !important;
+
+    .arrow {
+      transform  : rotateZ(180deg);
+      font-size  : 10px;
+      margin-left: 5px;
+      position   : relative;
+      top        : -1px;
+    }
+  }
+}
+
+.projectTimeline {
+  :global {
+    .ant-card-body {
+      // max-height    : 290px;
+      height: 290px;
+      overflow      : auto;
+      padding-bottom: 10px;
+    }
+
+    .ant-timeline-item {
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.displayMembers {
+
+  .icon {
+    transform  : rotate(180deg);
+    font-size  : 10px;
+    margin-left: 5px;
+    color      : @color-blue-6;
+  }
+
+  :global {
+    .ant-card-body {
+      // max-height    : 222px;
+      height: 222px;
+      overflow      : auto;
+      padding-top   : 14px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .projectMembers {
+    position: relative;
+    height  : 42px;
+
+    .lastWord {
+      position     : relative;
+      top          : -14px;
+      left         : -5px;
+      font-family  : PingFangSC-Regular;
+      font-size    : 14px;
+      display      : inline-block;
+      background   : @color-blue-6;
+      border-radius: 100%;
+      width        : 28px;
+      height       : 28px;
+      line-height  : 28px;
+      text-align   : center;
+      color        : @color-white-1;
+    }
+
+    .name {
+      max-width: 70%;
+    }
+
+    .icon {
+      position : relative;
+      top      : -14px;
+      left     : 10px;
+      font-size: 12px;
+
+      .img {
+        width : 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.projectSteps {
+  :global {
+    .ant-card-body {
+      height  : 260px;
+      overflow: auto;
+      padding : 12px 24px;
+    }
+  }
+}
+
+.projectMenu {
+  .pic {
+    display     : inline-block;
+    overflow    : auto;
+    margin-left : 10px;
+    margin-right: 5px;
+    width       : 20px;
+    height      : 20px;
+  }
+
+  .project {
+    color: @color-black-9;
+  }
+
+  .linkItem {
+    height      : 30px;
+    line-height : 30px;
+    margin-right: 10px;
+
+    &:hover {
+      background: @color-blue-1;
+      cursor    : pointer;
+    }
+  }
+
+  .select {
+    color     : @color-blue-6;
+    background: @color-blue-1;
+  }
+}
+
+// 项目详情展示
+.detailDisplay {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0px;
+    }
+  }
+
+  .aimDisplay {
+    :global {
+      .ant-form-item-control {
+        line-height: unset !important;
+      }
+    }
+  }
+}
+
+.iconC {
+  text-align: center;
+  position  : relative;
+  border-top: 2px solid @color-white-1;
+  cursor    : pointer;
+  height    : 15px;
+
+  &:hover {
+    border-top: 2px solid @color-blue-6;
+  }
+
+  .iconBall {
+    position     : relative;
+    top          : -13px;
+    display      : inline-block;
+    width        : 26px;
+    height       : 26px;
+    border-radius: 50%;
+    background   : @color-white-1;
+    border       : 1px solid @color-black-4;
+    box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.12);
+    text-align   : center;
+    line-height  : 26px;
+    cursor       : pointer;
+    z-index      : 999;
+
+    .iconDown {
+      transform: rotate(90deg);
+      position : relative;
+      font-size: 10px;
+      top      : -2px;
+    }
+
+    .iconUp {
+      transform: rotate(-90deg);
+      position : relative;
+      font-size: 10px;
+      top      : -3px;
+    }
+  }
+
+}
+
+.projectWeekReport {
+  .text {
+    color: @color-black-8;
+
+    &:hover {
+      color: @color-blue-6;
+    }
+  }
+
+  .icon {
+    transform  : rotate(180deg);
+    font-size  : 10px;
+    margin-left: 5px;
+    color      : @color-blue-6;
+  }
+
+  :global {
+    .ant-card-body {
+      // max-height: 200px;
+      // height: 200px;
+      overflow  : auto;
+      padding   : 10px;
+    }
+  }
+}
+
+.mileStone {
+  :global {
+    .ant-card-body {
+      padding: 0px;
+    }
+  }
+}
+
+.projectAttachment {
+  .icon {
+    transform  : rotate(180deg);
+    font-size  : 10px;
+    margin-left: 5px;
+    color      : @color-blue-6;
+  }
+
+  .attachmentContent {
+    // max-height: 172px;
+    height: 172px;
+    :global {
+      .ant-card-body {
+        padding: 12px 10px;
+      }
+    }
+
+    overflow: auto;
+
+    .item {
+      margin-top: 12px;
+
+      .linkIcon {
+        width     : 26px;
+        height    : 20px;
+        background: @color-blue-1;
+      }
+
+      &:first-child {
+        margin-top: 0px;
+      }
+
+      .annexImg {
+        width : 25px;
+        height: 20px;
+      }
+
+      .attachmentName {
+        width      : 70%;
+        display    : inline-block;
+        margin-left: 10px;
+      }
+
+      .downLoad {
+        visibility: hidden;
+        width     : calc(30% - 25px);
+      }
+
+      &:hover {
+        .downLoad {
+          visibility: visible;
+          width     : calc(30% - 25px);
+          text-align: right;
+        }
+      }
+    }
+  }
+
+}
+
+.itemTime {
+  margin-bottom: 0.2em;
+  color: @color-black-6;
+}
+
+.return {
+  color: @color-black-8;
+}

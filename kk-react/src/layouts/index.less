@@ -1,0 +1,490 @@
+.root {
+  padding: 0;
+  margin : 0;
+}
+
+.optButton {
+  .icon {
+    font-size: 20px;
+    position : relative;
+    top      : 1px;
+  }
+
+  :global {
+    .ant-btn {
+      background-image: linear-gradient(to right, #5F87F8, #3860F4);
+      color           : @color-white-1;
+      border          : none;
+      width           : 118px !important;
+      border-radius   : 100px;
+
+      &:hover {
+        background-image: linear-gradient(to right, #537FFA, #3357DF);
+        color           : @color-white-1;
+        border          : none;
+      }
+
+      &:focus {
+        background-image: linear-gradient(to right, #537FFA, #3357DF);
+        color           : @color-white-1;
+        border          : none;
+      }
+    }
+  }
+}
+
+.staticContainer {
+  display : flex;
+  position: absolute;
+  top     : 0;
+  right   : 0;
+  bottom  : 0;
+  left    : 0;
+}
+
+// 主容器
+.container {
+  display : flex;
+  position: absolute;
+  top     : 56px;
+  right   : 0;
+  bottom  : 0;
+  left    : 0;
+}
+
+// 顶部
+.header {
+  display         : flex;
+  justify-content : space-between;
+  height          : 56px;
+  line-height     : 56px;
+  background-color: rgba(255, 255, 255, 1);
+  position        : relative;
+  box-shadow      : 0 2px 8px 0 rgba(25, 34, 46, 0.08);
+  z-index         : 999;
+
+  .left {
+    position    : absolute;
+    left        : 0;
+    top         : 0;
+    width       : 156px;
+    height      : 50px;
+    font-size   : 28px;
+    color       : @color-black-8;
+    text-align  : center;
+    font-style  : italic;
+    margin-right: 50px;
+    margin-left : 10px;
+
+    .logo {
+      position : relative;
+      top      : -50px;
+      font-size: 160px;
+    }
+
+    .suofang {
+      margin-left: 30px;
+      line-height: 45px;
+      height     : 50px;
+      position   : absolute;
+    }
+  }
+
+  .quickTool {
+    position: absolute;
+    left    : 220px;
+    width   : 500px;
+
+    .workbench {
+      display       : inline-block;
+      width         : 116px;
+      height        : 36px;
+      border-radius : 3px;
+      line-height   : 36px;
+      text-align    : center;
+      opacity       : initial;
+      font-family   : PingFangSC-Medium;
+      font-size     : 14px;
+      letter-spacing: 1px;
+      background    : rgba(239, 243, 247, 1);
+
+      &:hover {
+        border: 1px @color-blue-6 solid;
+      }
+    }
+
+    .activeworkbench {
+      display       : inline-block;
+      width         : 116px;
+      height        : 36px;
+      border-radius : 3px;
+      line-height   : 36px;
+      text-align    : center;
+      opacity       : initial;
+      font-family   : PingFangSC-Medium;
+      font-size     : 14px;
+      letter-spacing: 1px;
+      background    : @color-blue-6;
+    }
+
+    .divider {
+      position    : relative;
+      top         : 8px;
+      display     : inline-block;
+      width       : 1px;
+      height      : 22px;
+      background  : rgba(231, 233, 236, 1);
+      margin-left : 30px;
+      margin-right: 30px;
+    }
+
+    .btnSelect {
+      display      : inline-block;
+      width        : 100px;
+      height       : 32px;
+      line-height  : 32px;
+      background   : @color-blue-6;
+      border-radius: 18px;
+      text-align   : center;
+      color        : @color-white-1;
+    }
+
+    .btnUnSelect {
+      display    : inline-block;
+      width      : 100px;
+      height     : 32px;
+      line-height: 32px;
+      text-align : center;
+      color      : rgba(71, 86, 105, 1);
+
+      &:hover {
+        color: @color-blue-6;
+      }
+    }
+
+    .enableA {
+      color: @color-white-1;
+    }
+
+    .unableA {
+      color: @color-blue-6;
+    }
+  }
+
+  .info {
+    position: absolute;
+    right   : 10px;
+    width   : 600px;
+
+    .opt {
+      position: absolute;
+      right   : 170px;
+
+      .help {
+        position: relative;
+        left    : 0px;
+      }
+
+      .msg {
+        position: relative;
+        left    : 5px;
+
+        :global {
+          .ant-badge-count {
+            background : @color-blue-6;
+            min-width  : 15px;
+            height     : 15px;
+            padding    : 0 4px;
+            line-height: 15px;
+          }
+        }
+
+        .xinxi {
+          position: relative;
+          left    : 8px;
+        }
+      }
+
+      .divider {
+        display         : inline-block;
+        height          : 20px;
+        width           : 1px;
+        background-color: @color-black-3;
+        margin-right    : 15px;
+        position        : relative;
+        top             : 4px;
+      }
+    }
+
+    .user {
+      position   : absolute;
+      right      : 0px;
+      display    : inline-block;
+      width      : 140px;
+      border-left: 1px solid rgba(229, 231, 230, 1);
+    }
+
+  }
+
+}
+
+// 侧边
+.sider {
+  flex      : 0 0 156px;
+  position  : relative;
+  box-shadow: 2px 0 8px 0 rgba(25, 34, 46, 0.08);
+  z-index   : 99;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .ulStyle {
+    list-style: none;
+    padding   : 0px;
+
+    .returnProduct {
+      cursor          : pointer;
+      text-align      : center;
+      margin          : 16px 8px;
+      height          : 42px;
+      line-height     : 42px;
+      background-color: @color-black-2;
+      opacity         : initial;
+      border-radius   : 6px;
+      font-family     : PingFangSC-Regular;
+      font-size       : 14px;
+      color           : @color-black-8;
+    }
+
+    .settingItem {
+      position    : relative;
+      display     : block;
+      height      : 43px;
+      line-height : 43px;
+      font-family : PingFangSC-Regular;
+      color       : @color-black-6 ;
+      cursor      : pointer;
+      padding-left: 30px;
+
+      .ItemArrow {
+        position   : absolute;
+        top        : 0px;
+        right      : 10px;
+        line-height: 42px;
+        color      : @color-black-4;
+        font-size  : 6px;
+      }
+    }
+
+    .settingItemActive {
+      color     : @color-blue-6;
+      box-shadow: 0 0 12px 0 rgba(25, 34, 46, 0.22);
+      opacity   : initial;
+
+      .ItemArrow {
+        color: @color-black-4;
+      }
+
+      &:after {
+        position        : absolute;
+        left            : 0;
+        top             : 0;
+        width           : 2px;
+        height          : 43px;
+        display         : block;
+        background-color: @color-blue-6;
+        content         : '';
+      }
+    }
+
+    .liStyle {
+      height      : 42px;
+      line-height : 42px;
+      padding-left: 40px;
+
+      &:hover {
+        .icon {
+          color: @color-blue-6;
+        }
+
+        .name {
+          color: @color-blue-6;
+        }
+      }
+
+      .icon {
+        color: @color-black-4;
+      }
+
+      .name {
+        color: @color-black-6;
+      }
+    }
+
+    .liSelectStyle {
+      font-size   : 14px;
+      padding-left: 38px;
+      height      : 42px;
+      line-height : 42px;
+      color       : @color-blue-6;
+      background  : rgba(255, 255, 255, 1);
+      box-shadow  : 0px 0px 12px 0px rgba(25, 34, 46, 0.22);
+      border-left : 2px solid rgba(45, 153, 255, 1);
+    }
+
+    .liPosition {
+      position: relative;
+      top     : 2px;
+    }
+
+    // 缺陷的位置
+    .bugPosition {
+      position: relative;
+      top     : 2px;
+      left    : -1px;
+    }
+
+    .arrow {
+      position : absolute;
+      right    : 10px;
+      color    : @color-black-4;
+      font-size: 6px;
+    }
+  }
+
+  .productSetting {
+    position   : fixed;
+    bottom     : 15px;
+    left       : 15px;
+    display    : inline-block;
+    width      : 126px;
+    height     : 38px;
+    line-height: 38px;
+    font-family: PingFangSC-Regular;
+
+    background   : @color-blue-6;
+    box-shadow   : 0 2px 16px 0 rgba(45, 153, 255, 0.36);
+    border-radius: 25.5px;
+    border-radius: 25.5px;
+    color        : #ffffff;
+
+    text-align: center;
+
+    &:hover {
+      background: @color-blue-5;
+    }
+
+    .icon {
+      font-size: 16px;
+    }
+  }
+}
+
+// 折叠后的sider
+.collapseSider {
+  flex      : 0 0 60px;
+  position  : relative;
+  box-shadow: 2px 0 8px 0 rgba(25, 34, 46, 0.08);
+  z-index   : 99;
+
+  .ulStyle {
+    list-style  : none;
+    padding-left: 0px;
+
+    .sliderItem {
+      position: relative;
+
+      .liStyle {
+        height      : 42px;
+        line-height : 42px;
+        padding-left: 20px;
+        color       : @color-black-7;
+        font-size   : 14px;
+
+        &:hover {
+          .icon {
+            color: @color-blue-6;
+          }
+        }
+
+        .icon {
+          color: @color-black-4;
+        }
+      }
+
+      .liSelectStyle {
+        font-size   : 14px;
+        padding-left: 18px;
+        height      : 42px;
+        line-height : 42px;
+        color       : @color-blue-6;
+        background  : rgba(255, 255, 255, 1);
+        box-shadow  : 0px 0px 12px 0px rgba(25, 34, 46, 0.22);
+        border-left : 2px solid rgba(45, 153, 255, 1);
+      }
+
+      .liPosition {
+        position: relative;
+        top     : 2px;
+      }
+
+      // 缺陷的位置
+      .bugPosition {
+        position: relative;
+        top     : 2px;
+        left    : -1px;
+      }
+
+      .hoverName {
+        position     : absolute;
+        left         : 60px;
+        min-width    : 80px;
+        height       : 42px;
+        background   : #FFFFFF;
+        box-shadow   : 0 2px 8px 0 rgba(25, 34, 46, 0.08);
+        border-radius: 2px;
+        top          : 0px;
+        text-align   : center;
+        line-height  : 42px;
+        z-index      : 9999;
+        background   : #fff;
+      }
+    }
+
+    .productSetting {
+      position  : absolute;
+      bottom    : 0px;
+      left      : 0px;
+      display   : inline-block;
+      width     : 60px;
+      height    : 60px;
+      text-align: center;
+
+      .btn {
+        position     : relative;
+        top          : 0px;
+        width        : 38px;
+        height       : 38px;
+        border-radius: 3px;
+      }
+    }
+
+  }
+}
+
+// 主内容
+.main {
+  flex      : 1 1 auto;
+  overflow  : auto;
+  background: @color-black-2;
+}
+
+.popoverUl {
+  list-style: none;
+  padding   : 0px;
+  margin    : 0px;
+
+  .popoverLi {
+    cursor : pointer;
+    padding: 0px 0px;
+  }
+}

@@ -1,0 +1,111 @@
+
+body {
+  overflow: hidden;
+}
+
+/* 用于布局 */
+.m-container {
+  margin: 20px;
+  .ant-card {
+    height: 90vh;
+    overflow: auto;
+  }
+}
+
+.loading {
+  text-align: center;
+  .small {
+    margin-top: 2px;
+  }
+  .normal {
+    margin-top: 10px;
+  }
+  .large {
+    margin-top: 30px;
+  }
+}
+
+.app-cascader {
+  width: 260px;
+  .ant-cascader-menu {
+    width: 100% !important;
+    background-color: #fff;
+  }
+}
+
+/* 404和403页面 */
+.m-error-404{
+  margin: 20px;
+  width: 960px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  position: absolute;
+  .m-pic{
+    display: inline-block;
+    img{
+      height: 360px;
+      width: 460px;
+    }
+  }
+  .m-tip{
+    display: inline-block;
+    margin: 60px auto auto 100px;
+    h1, h2, p{
+      color: @color-black-7;
+    }
+    h1{
+      font-size: 100px;
+      font-weight: bold;
+      margin-bottom: 0;
+      color: @color-black-8;
+    }
+    h2{
+      font-size: 18px;
+    }
+    text-align: center;
+  }
+}
+
+
+/* Firefox CSS Hack */
+@-moz-document url-prefix() {
+  .ci .m-doticon, .ci_detail .m-doticon{
+    top: 10px;
+  }
+}
+
+.m-nav {
+  line-height: 50px;
+  height: 50px;
+}
+
+.m-subnav {
+  background: #fff;
+  border-bottom: 1px solid #e4e7eb;
+}
+
+
+/* ToolTip组件显示内容的最大宽度修改 */
+.m-tooltip{
+  width: 400px;
+  .ant-tooltip-inner{
+    max-width: 400px;
+  }
+}
+
+/* 部分页面头部需要去除左右边距，例如依赖冲突检测、Jar包版本检测详情页 */
+.m-special-head {
+  position: relative;
+  margin: -20px -20px 20px;
+  .ant-card-head-title {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px 0;
+    font-weight: normal;
+  }
+  .ant-card-body {
+    padding-left: 40px;
+    padding-bottom: 0px;
+  }
+}

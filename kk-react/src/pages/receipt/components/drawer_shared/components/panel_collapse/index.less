@@ -1,0 +1,49 @@
+.header {
+  transition: all .3s;
+}
+
+.container {
+  margin-bottom: 10px;
+
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  .icon {
+    color: @color-black-4;
+  }
+
+  :global {
+    .ant-collapse {
+      border    : none;
+      background: none;
+    }
+
+    .ant-collapse-content>.ant-collapse-content-box {
+      padding: 0px;
+    }
+
+    .ant-collapse>.ant-collapse-item {
+      border: none;
+    }
+
+    .ant-collapse-content {
+      border: none;
+    }
+
+    .ant-collapse .ant-collapse-item .ant-collapse-header .ant-collapse-arrow {
+      color: @color-black-4;
+      left : 70px;
+      right: unset;
+    }
+
+    .ant-collapse .ant-collapse-item .ant-collapse-header {
+      padding    : 0px 10px;
+      font-size  : 16px;
+      font-weight: 600;
+    }
+  }
+
+}

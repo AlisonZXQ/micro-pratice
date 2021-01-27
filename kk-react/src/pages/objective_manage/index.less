@@ -1,0 +1,61 @@
+.container {
+  margin: 15px;
+
+  .header {
+    background-color: @color-white-1;
+    padding         : 10px 0px 0px 0px;
+
+    .tabs {
+      border-bottom: 1px solid @color-black-3;
+    }
+
+    .selectForm {
+      margin: 10px 10px 0px 10px;
+      padding-bottom: 10px;
+
+      .selectUser {
+        display      : inline-block;
+        border       : 1px solid @color-black-4;
+        height       : 28px;
+        line-height  : 28px;
+        background   : @color-black-1;
+        border-radius: 2px;
+        margin-right : 10px;
+        padding      : 0px 4px;
+
+        .userIcon {
+          color: @color-black-6;
+          position: relative;
+          top: -1px;
+        }
+      }
+
+      .date {
+        display      : inline-block;
+        border       : 1px solid @color-black-4;
+        background   : @color-black-1;
+        height       : 28px;
+        line-height  : 28px;
+        border-radius: 2px;
+        padding      : 0px 4px;
+        .dateIcon {
+          color: @color-black-6;
+          margin-right: 5px;
+          position: relative;
+          top: 1px;
+        }
+      }
+
+      .input {
+        display: inline-block;
+        width  : 100%;
+        height : 48px;
+      }
+    }
+
+    .query {
+      margin: 10px;
+    }
+
+  }
+}

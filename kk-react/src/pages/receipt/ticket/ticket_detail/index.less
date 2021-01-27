@@ -1,0 +1,63 @@
+.container {
+  :global {
+    .ant-card-body {
+      padding: 20px 20px 0px 20px;
+    }
+
+    .ant-spin-nested-loading {
+      position: unset;
+    }
+
+    .ant-spin-container {
+      position: unset;
+    }
+  }
+
+  .header {
+    position: absolute;
+    top: 0px;
+    z-index : 90;
+    box-shadow: 2px 0 8px 0 rgba(25, 34, 46, 0.08);
+
+    .tabPane {
+      display     : inline-block;
+      width       : 64px;
+      text-align  : center;
+      cursor      : pointer;
+      color       : @color-black-6;
+      margin-right: 10px;
+    }
+
+    .tabPaneSelect {
+      display       : inline-block;
+      width         : 64px;
+      text-align    : center;
+      border-bottom : 2px solid @color-blue-6;
+      padding-bottom: 10px;
+      color         : @color-black-9;
+      margin-right  : 10px;
+    }
+
+    .icon {
+      font-size: 14px;
+      margin-right: 5px;
+    }
+
+    .copy {
+      font-size: 16px;
+      position : relative;
+      top      : -1px;
+      cursor   : pointer;
+    }
+  }
+
+  .body {
+    position   : absolute;
+    top        : 140px;
+    bottom     : 0px;
+    right      : 0px;
+    overflow   : auto;
+    padding    : 15px;
+    padding-top: 0px;
+  }
+}

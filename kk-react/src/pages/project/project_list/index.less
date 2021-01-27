@@ -1,0 +1,42 @@
+.queryArea {
+  margin-top   : 12px;
+  padding      : 0px 20px 15px 20px;
+  background   : @color-white-1;
+  box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.08);
+  border-radius: 2px;
+}
+
+.tableList {
+  padding: 0px 20px;
+  background: @color-white-1;
+}
+
+.more {
+  .moreCard {
+    display   : none;
+    position  : absolute;
+    background: @color-white-1;
+    padding   : 10px;
+    box-shadow: 2px 0 8px 0 rgba(25, 34, 46, 0.08);
+  }
+}
+
+.disableMore {
+  .moreCard {
+    display: none;
+  }
+}
+
+.more:hover {
+  .moreCard {
+    display: block;
+
+    a {
+      color: @color-black-8;
+    }
+
+    a:hover {
+      color: @color-blue-6;
+    }
+  }
+}

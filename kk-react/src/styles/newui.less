@@ -1,0 +1,328 @@
+th.column-caozuo,
+td.columnCaozuo {
+  //table表格操作列居中
+  text-align: center !important;
+}
+
+.ant-modal-confirm-content {
+  //全局modal确认框的内容样式
+  color    : @color-black-6  !important;
+  font-size: 12px !important;
+}
+
+.ant-table-column-title {
+  //表格头部字体统一风格
+  color      : @color-black-9;
+  font-weight: bold;
+  font-size  : 12px;
+}
+
+.ant-table-thead>tr>th {
+  background   : @color-black-1;
+  padding      : 12px 16px;
+  border-bottom: none;
+}
+
+.ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.ant-table-thead>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.ant-table-tbody>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td {
+  //表格固定列之后的样式
+  background: @color-black-1 !important;
+}
+
+.ant-table-tbody>tr>td {
+  white-space   : nowrap;
+  color         : @color-black-8;
+  padding       : 12px 16px;
+  vertical-align: middle;
+  border-bottom : 1px @color-black-1 solid;
+}
+
+.ant-table-tbody>tr:hover>td {
+  background: @color-black-1 !important;
+}
+
+.ant-table-tbody>tr:last-child>td {
+  color        : @color-black-8;
+  padding      : 12px 16px;
+  border-bottom: none;
+}
+
+.bgCard {
+  background: @color-black-3;
+}
+
+.tableMargin {
+  margin: 10px 14px;
+}
+
+.u-mgt8 {
+  margin-top: 8px;
+}
+
+.bbTitle {
+  height      : 20px;
+  line-height : 20px;
+  border-left : 4px @color-blue-6 solid;
+  margin      : 12px 0px;
+  padding-left: 5px;
+
+  .name {
+    font-family: PingFangSC-Medium;
+    font-size  : 16px;
+    color      : @color-black-9;
+  }
+}
+
+.bgWhiteModel {
+  background   : @color-white-1;
+  padding      : 10px;
+  border-radius: 2px;
+  box-shadow   : 0px 0px 8px 0px rgba(25, 34, 46, 0.08);
+}
+
+.ant-modal-header {
+  //modal弹框头部高度变窄
+  border-top-left-radius : 2px;
+  border-top-right-radius: 2px;
+  padding                : 12px 20px;
+  border-bottom          : none;
+
+  .ant-modal-title {
+    font-weight: bold;
+    font-size  : 16px;
+    color      : @color-black-9;
+  }
+}
+
+.ant-modal-close {
+  //modal弹框的关闭按钮与标题对其
+  top: -5px;
+}
+
+// .ant-modal-content {
+//   border-radius: 2px;
+//   .ant-modal-close {
+//     visibility: hidden;
+//   }
+// }
+.ant-modal-body {
+  padding: 8px 20px 20px 20px;
+}
+
+.ant-modal-confirm .ant-modal-body {
+  //confirm的modal弹框
+  padding: 12px 20px;
+}
+
+.ant-modal-footer {
+  padding   : 0px 20px 12px 20px;
+  border-top: none;
+
+  button {
+    width: 98px;
+  }
+}
+
+.ant-empty {
+
+  //空页面
+  .ant-empty-description {
+    color: @color-black-6;
+  }
+}
+
+.hoverItem:hover {
+  background: @color-blue-1 !important;
+}
+
+.grayColor {
+  color: @color-black-6;
+}
+
+.delColor {
+  color: @color-red-6;
+
+  &:hover {
+    color: @color-red-6;
+  }
+}
+
+.ant-card-bordered {
+  border: unset;
+}
+
+.font-pfm {
+  font-family: PingFangSC-Medium;
+}
+
+// 按钮宽度98px
+.btn98 {
+  :global {
+    .ant-btn {
+      width: 98px;
+    }
+  }
+}
+
+// 必填*
+.needIcon {
+  display     : inline-block;
+  margin-right: 5px;
+  color       : #f5222d;
+  font-size   : 14px;
+  font-family : SimSun, sans-serif;
+  line-height : 1;
+}
+
+.ant-tabs-bar {
+  border: unset;
+}
+
+//产品配置头部样式
+.settingTitle {
+  height       : 48px;
+  background   : #FFFFFF;
+  box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.08);
+  border-radius: 2px;
+  padding-left : 16px;
+  line-height  : 48px;
+  font-weight  : bold;
+}
+
+.lastWord {
+  position     : relative;
+  top          : -14px;
+  left         : -5px;
+  font-family  : PingFangSC-Regular;
+  font-size    : 14px;
+  display      : inline-block;
+  background   : @color-blue-6;
+  border-radius: 100%;
+  width        : 28px;
+  height       : 28px;
+  line-height  : 28px;
+  text-align   : center;
+  color        : #FFFFFF;
+}
+
+//系统级tag
+.systemTag {
+  padding      : 0px 5px;
+  border-radius: 3px;
+  border       : 1px @color-blue-6 solid;
+  background   : @color-blue-1;
+  color        : @color-blue-6;
+}
+
+// 单据下编辑hover上去的边框
+.editIssue {
+  cursor    : pointer;
+  border    : 1px solid white;
+
+  &:hover {
+    border: 1px solid @color-blue-6;
+  }
+}
+
+// 单据下一些icon的颜色 hover前后的色值
+.issueIcon {
+  color: @color-black-5;
+
+  &:hover {
+    color: @color-black-7;
+  }
+}
+
+// 产品设置和系统管理里面的card的padding处理
+.cardBottomNone {
+  :global {
+    .ant-card-body {
+      padding: 20px 20px 0px 20px;
+    }
+  }
+}
+
+.ant-table-fixed-columns-in-body {
+  width: 0px;
+}
+
+.modal-createissue-height {
+  :global {
+    .ant-modal-body {
+      height  : calc(100vh - 250px);
+      overflow: auto;
+    }
+  }
+}
+
+//全局滚动条演示
+div::-webkit-scrollbar {
+  width : 6px;
+  height: 6px;
+}
+
+div::-webkit-scrollbar-track {
+  background   : rgb(239, 239, 239);
+  border-radius: 2px;
+}
+
+div::-webkit-scrollbar-thumb {
+  background   : @color-black-5;
+  border-radius: 10px;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+  background: @color-black-6;
+}
+
+div::-webkit-scrollbar-corner {
+  background: @color-black-3;
+}
+
+// checkbox的disabled的情况对不齐
+.ant-checkbox-wrapper.ant-checkbox-wrapper-disabled {
+  margin-left: 0px;
+}
+
+.queryHover {
+  display      : inline-block;
+  height       : 32px;
+  line-height  : 32px;
+  border-radius: 2px;
+  padding      : 0px 10px;
+  cursor       : pointer;
+
+  &:hover {
+    background: @color-black-2;
+  }
+}
+
+// dropdown menu下的item样式
+.menuItem {
+  display   : block;
+  padding   : 5px 12px;
+  cursor    : pointer;
+  width     : 100%;
+  text-align: center;
+
+  &:hover {
+    color           : @color-blue-5;
+    background-color: #F2FAFF;
+  }
+}
+
+pre {
+  background-color: @color-gold-1;
+}
+
+// dropDownIcon
+.dropDownIcon {
+  font-size  : 12px;
+  color      : @color-black-5;
+
+  &:hover {
+    color: @color-black-8;
+  }
+}

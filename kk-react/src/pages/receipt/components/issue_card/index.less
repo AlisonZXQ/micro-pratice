@@ -1,0 +1,77 @@
+.container {
+  text-align: left;
+  display         : inline-block;
+  background-color: @color-white-1;
+  width           : 100%;
+  height          : 100%;
+  color           : @color-black-8;
+  cursor          : pointer;
+  box-shadow      : 0 0 8px 0 rgba(25, 34, 46, 0.08);
+
+  .firstLine {
+    width        : 100%;
+    margin-bottom: 6px;
+
+    .left {
+      display    : inline-block;
+      width      : 80%;
+      text-align : left;
+      margin-left: 5px;
+
+      .leftName {
+        max-width: 80%;
+        color: @color-black-9;
+      }
+
+      .icon {
+        position: relative;
+        top     : -5px;
+        right   : 5px;
+      }
+    }
+
+    .right {
+      display   : inline-block;
+      width     : 20%;
+      text-align: right;
+    }
+  }
+
+  .name {
+    display      : inline-block;
+    height       : 18px;
+    line-height  : 12px;
+    text-align   : center;
+    background   : @color-blue-6;
+    border-radius: 2px;
+    color        : @color-white-1;
+    font-size    : 10px;
+    padding      : 4px 6px;
+    position     : relative;
+    top          : -2px;
+  }
+
+  .epIcon {
+    margin-right: 8px;
+
+    .icon {
+      margin-right: 5px;
+    }
+  }
+
+  .epIcon:last-child {
+    margin-right: 0px;
+  }
+
+  .thirdLine {
+    padding   : 6px;
+    border-top: 1px solid @color-black-3;
+  }
+
+  .icon {
+    color        : @color-blue-6;
+    border-radius: 2px;
+    font-size    : 16px;
+    margin-right : 5px;
+  }
+}

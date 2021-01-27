@@ -1,0 +1,162 @@
+.query {
+  background-color: @color-white-1;
+  padding-bottom  : 10px;
+  padding-right   : 10px;
+}
+
+.container {
+  margin-top: 15px;
+
+  .objective {
+    padding         : 20px;
+    background-color: @color-white-1;
+    margin-bottom   : 15px;
+    box-shadow      : 0 0 8px 0 rgba(25, 34, 46, 0.08);
+    border-radius   : 2px;
+    position        : relative;
+
+    .tag {
+      position : absolute;
+      font-size: 35px;
+      cursor   : pointer;
+      left     : -10px;
+      top      : -8px;
+    }
+
+    .firstPart {
+
+      .icon {
+        vertical-align: top;
+      }
+
+      .title {
+        vertical-align: top;
+        display       : inline-block;
+        font-family   : PingFangSC-Medium;
+        font-size     : 14px;
+        color         : @color-black-9;
+        text-align    : justify;
+        line-height   : 22px;
+        margin-left   : 5px;
+        width         : calc(100% - 200px);
+        cursor        : pointer;
+      }
+
+      .moreOpt {
+        vertical-align: top;
+        display       : inline-block;
+        width         : 180px;
+        text-align    : right;
+
+        .hasParent {
+          background   : @color-white-1;
+          border       : 1px solid @color-blue-6;
+          border-radius: 2px;
+          font-family  : PingFangSC-Regular;
+          font-size    : 12px;
+          color        : @color-blue-6;
+          text-align   : center;
+          line-height  : 22px;
+          height       : 22px;
+          padding      : 1px 6px;
+          margin-right : 10px;
+        }
+      }
+    }
+
+    .secondPart {
+      margin: 10px 0px;
+
+      .level {
+        position: relative;
+        top: 1px;
+        margin-right: 10px;
+
+        .levelIcon {
+          font-size   : 16px;
+          margin-right: 2px;
+        }
+      }
+
+      .dateIcon {
+        color       : @color-black-6;
+        margin-right: 5px;
+      }
+
+      .responseUser {
+        position: relative;
+        top: 1px;
+        margin-left: 10px;
+      }
+    }
+
+    .thirdPart {
+      background   : @color-black-1;
+      border-radius: 2px;
+      padding      : 0px 16px;
+
+      .keyResult {
+        border-bottom  : 1px solid @color-black-4;
+        padding        : 16px 0px;
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        cursor         : pointer;
+
+        .name {
+          font-family: PingFangSC-Regular;
+          color      : @color-black-9;
+        }
+      }
+
+      .keyResult:last-child {
+        border-bottom: unset;
+      }
+
+      .addKR {
+        background   : @color-black-1;
+        border-radius: 2px;
+        padding      : 6px;
+        color        : @color-blue-6;
+      }
+    }
+  }
+}
+
+// MoreOperation
+.more {
+  cursor: pointer;
+  color : @color-black-8;
+
+  &:hover {
+    color: @color-blue-6;
+  }
+}
+
+.menu {
+  width: 150px;
+}
+
+.tip {
+  font-family  : PingFangSC-Regular;
+  font-size    : 14px;
+  color        : @color-black-9;
+  margin-bottom: 10px;
+}
+
+.cancelContainer {
+  font-family     : PingFangSC-Regular;
+  background-color: @color-black-1;
+  padding         : 10px;
+  color           : @color-black-8;
+
+  .parentName {
+    border-bottom: 1px solid @color-black-4;
+    padding      : 6px;
+  }
+
+  .name {
+    padding: 6px;
+    color  : @color-blue-6;
+  }
+}

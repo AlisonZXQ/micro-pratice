@@ -1,0 +1,29 @@
+.common {
+  .bf-content {
+    font-size: 14px;
+    padding: 0;
+  }
+  .public-DraftEditor-content{
+    padding: 4px 11px;
+    &>div{
+      padding: 0;
+    }
+  }
+}
+
+.style {
+  border: 1px solid rgba(0,0,0,.2);
+  // height: 450px;
+  // overflow: auto;
+}
+
+.readonlyStyle {
+  border: 0;
+  .common;
+  .bf-content {
+    height: 100%;
+    .public-DraftEditor-content {
+      padding: 0;
+    }
+  }
+}

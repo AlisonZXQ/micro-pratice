@@ -1,0 +1,120 @@
+.createContainer {
+
+  .button {
+    position: relative;
+    top     : -40px;
+    left    : 595px;
+  }
+
+  .createSize {
+    height  : 300px;
+    overflow: auto;
+    width   : 100%;
+
+
+    :global {
+      .ant-form-item {
+        margin: 5px 0px 5px 10px !important;
+      }
+    }
+
+    .sourceTitle {
+      display      : flex;
+      align-items  : center;
+      position     : relative;
+      border       : 1px solid #E1E2E5;
+      border-bottom: unset;
+
+      .expandIcon {
+        margin-left: 5px;
+        position   : absolute;
+        top        : 10px;
+        color      : @color-black-8;
+      }
+
+      .sourceInput {
+        display    : inline-block;
+        margin-left: 10px;
+        position   : relative;
+        width      : 97%;
+        left       : 10px;
+      }
+    }
+
+    .sizeRow {
+      display      : flex;
+      align-items  : center;
+      border       : 1px solid #E1E2E5;
+      border-bottom: unset;
+    }
+
+    .addStyle {
+      border     : 1px solid #E1E2E5;
+      height     : 42px;
+      line-height: 42px;
+    }
+  }
+
+  .headerStyle {
+    background   :@color-blue-1;
+    border       : 1px solid #E1E2E5;
+    border-right : unset;
+    border-bottom: unset;
+    height       : 33px;
+    line-height  : 33px;
+    text-align   : center;
+    color        : @color-black-7;
+    font-family  : PingFang SC;
+
+    .need {
+      color: @color-red-6;
+    }
+  }
+
+}
+
+.selectContainer {
+  .SelectColor {
+    color: @color-blue-1;
+  }
+  .colStyle {
+    height      : 30px;
+    line-height : 30px;
+    padding-left: 8px;
+    background  : #FAFBFC;
+  }
+
+  .inputContainer {
+    padding      : 5px;
+    width        : 100%;
+    border       : 1px solid #E1E3E6;
+    background   : @color-black-1;
+    margin       : 0px 0px 10px 0px;
+    border-radius: 4px;
+
+    .tagStyle {
+      display      : inline-block;
+      height       : 22px;
+      line-height  : 14px;
+      background   : #E5F3FF;
+      border-radius: 2px;
+      color        : #118DFF;
+      margin       : 5px;
+      padding      : 5px 6px;
+
+      .deleteIcon {
+        font-size: 12px;
+        color    : @color-black-7;
+        position : relative;
+        top      : -2px;
+      }
+    }
+  }
+
+  .searchContainer {
+    border-radius: 4px;
+    border       : 1px solid #E1E3E6;
+    min-height   : 200px;
+    overflow     : auto;
+  }
+}

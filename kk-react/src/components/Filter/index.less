@@ -1,0 +1,59 @@
+.filterMenu {
+  background: @color-white-1;
+  padding   : 4px 0px;
+  box-shadow: 0px 2px 16px rgba(25, 34, 46, 0.120138);
+  width     : 200px;
+  cursor    : pointer;
+
+  .allOpen {
+    background: @color-blue-1;
+  }
+
+  .hr {
+    border-bottom: 1px @color-black-4 dashed;
+    margin       : 5px 12px;
+  }
+
+  .menuItem {
+    width  : 200px;
+    padding: 5px 12px;
+
+    .delete {
+      display: none;
+    }
+
+    .defaultIcon {
+      font-size   : 12px;
+      padding-left: 5px;
+      color       : @color-black-4;
+    }
+
+    .activeDefaultIcon {
+      font-size   : 12px;
+      padding-left: 5px;
+      color       : @color-blue-6;
+    }
+  }
+
+  .menuItem:hover {
+    color: @color-blue-6;
+
+    .delete {
+      display: block;
+      color  : @color-red-6;
+    }
+
+    // .defaultIcon {
+    //   color: @color-blue-6;
+    // }
+
+    // .unDefaultIcon {
+    //   color: @color-black-4;
+    // }
+  }
+}
+
+.title {
+  color  : @color-black-8;
+  display: inline-table;
+}

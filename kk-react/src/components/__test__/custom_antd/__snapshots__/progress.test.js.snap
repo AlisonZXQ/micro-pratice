@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`progress should snapshot correctly 1`] = `
+<span
+  className="container"
+>
+  <Progress
+    gapDegree={0}
+    percent={0}
+    showInfo={true}
+    size="small"
+    strokeColor={Object {}}
+    strokeLinecap="round"
+    trailColor="#f3f3f3"
+    type="line"
+  />
+</span>
+`;

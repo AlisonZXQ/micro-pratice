@@ -1,0 +1,84 @@
+.img {
+  width        : 80px;
+  height       : 80px;
+  border-radius: 100%;
+}
+
+.title {
+  font-size  : 20px;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.changeHeader {
+  font-size  : 20px;
+  font-weight: bold;
+
+  .icon {
+    font-size   : 32px;
+    position    : relative;
+    top         : 5px;
+    margin-right: 10px;
+  }
+}
+
+.iconC {
+  text-align: center;
+  position  : relative;
+  border-top: 2px solid @color-white-1;
+  cursor    : pointer;
+  height    : 15px;
+
+  &:hover {
+    border-top: 2px solid @color-blue-6;
+  }
+
+  .iconBall {
+    position     : relative;
+    top          : -13px;
+    display      : inline-block;
+    width        : 26px;
+    height       : 26px;
+    border-radius: 50%;
+    background   : @color-white-1;
+    border       : 1px solid @color-black-4;
+    box-shadow   : 0 0 8px 0 rgba(25, 34, 46, 0.12);
+    text-align   : center;
+    line-height  : 26px;
+    cursor       : pointer;
+
+    .iconDown {
+      transform: rotate(90deg);
+      position : relative;
+      font-size: 10px;
+      top      : -2px;
+    }
+
+    .iconUp {
+      transform: rotate(-90deg);
+      position : relative;
+      font-size: 10px;
+      top      : -3px;
+    }
+  }
+
+}
+
+.cardStyle {
+  :global {
+    .ant-card-body {
+      padding: 20px 20px 10px 20px;
+    }
+  }
+}
+
+.drawBack {
+  :global {
+    .ant-modal-content {
+      top: 20vh;
+    }
+  }
+}

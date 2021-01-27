@@ -1,0 +1,128 @@
+.grayLine {
+  width: 202px;
+  border: 1px @color-black-4 solid;
+}
+.addButton {
+  width: 22px;
+  height: 22px;
+  border: 2px @color-blue-6 solid;
+  color: @color-blue-6;
+  border-radius: 50%;
+}
+.startButton {
+  width: 22px;
+  height: 22px;
+  border: 2px @color-blue-6 solid;
+  border-radius: 50%;
+  .circleDot{
+    width: 10px;
+    height: 10px;
+    background: @color-blue-6;
+    border-radius: 50%;
+  }
+}
+.deleteButton {
+  visibility: hidden;
+  position: absolute;
+  right: -4px;
+  top: -4px;
+}
+.hoverNode {
+  .nodeButton {
+    width: 22px;
+    height: 22px;
+    border: 2px @color-black-4 solid;
+    border-radius: 50%;
+    .number {
+      color: @color-black-4;
+    }
+  }
+  .nodeNameStyle {
+    color: @color-black-4;
+  }
+  &:hover {
+    .nodeButton {
+      border: 2px @color-blue-6 solid;
+      .number {
+        color: @color-blue-6;
+      }
+    }
+    .deleteButton {
+      visibility: visible;
+    }
+    .nodeNameStyle {
+      color: @color-blue-6;
+    }
+  }
+}
+
+.nodeNameStyle {
+  position: absolute;
+  line-height: 30px;
+  color: @color-blue-6;
+  width: 200px;
+  text-align: center;
+  margin-left: -89px;
+}
+.activeNode {
+  .nodeButton {
+    border: none;
+    background: @color-blue-6;
+    .activeNumber {
+      color: @color-white-1;
+    }
+  }
+  .deleteButton {
+    visibility: visible;
+  }
+  .nodeNameStyle {
+    color: @color-blue-6;
+  }
+}
+.defineTag{
+  background: @color-black-3;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  line-height: 20px;
+}
+.checkButton {
+  cursor: pointer;
+  text-align: center;
+  width: 26px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 6px;
+  margin-left: 10px;
+  background: @color-black-1;
+  box-shadow: 0 0 8px 0 rgba(25, 34, 46, 0.25);
+  &:hover {
+    color: @color-blue-6;
+  }
+}
+
+.contentBorder {
+  border-top: 1px dashed @color-black-3;
+}
+
+.nodeLine {
+  width: 90px;
+  border: 1px @color-black-4 solid;
+}
+
+.createTop {
+  padding: 20px 10px 5px 10px;
+  background: @color-white-1;
+}
+
+.contentFlow {
+  line-height: 100px;
+  height: 100px;
+  padding: 0px 50px;
+  background: @color-white-1;
+}
+
+.bgWhite {
+  background: @color-white-1;
+}

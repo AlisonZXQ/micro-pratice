@@ -1,0 +1,40 @@
+.jiraTip {
+  background: @color-blue-1;
+  border: 1px solid @color-blue-6;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
+  span {
+    text-align: center;
+    color:@color-black-8 ;
+    font-size: 12px;
+  }
+}
+
+.showMore {
+  color: @color-black-6;
+  .icon {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  .leftLine {
+    width: 160px;
+    display: inline-block;
+    border-bottom: 1px @color-black-4 solid;
+    margin-right: 24px;
+    position: relative;
+    top: -4px;
+  }
+  .rightLine {
+    .leftLine;
+    margin-left: 24px;
+  }
+  &:hover {
+    color: @color-black-7;
+    .icon {
+      color: @color-black-7
+    }
+  }
+}

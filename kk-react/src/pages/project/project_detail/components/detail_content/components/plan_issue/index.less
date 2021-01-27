@@ -1,0 +1,59 @@
+.detailContent {
+  position: relative;
+  :global {
+    .ant-table-thead>tr>th .ant-table-header-column {
+      display       : inline-block;
+      max-width     : 100%;
+      vertical-align: middle;
+    }
+
+    .ant-table-thead>tr>th .ant-table-column-sorter .ant-table-column-sorter-inner {
+      margin-top: -0.25em;
+    }
+
+    .ant-card-body {
+      padding: 0px;
+    }
+
+    .ant-card {
+      position: unset;
+    }
+  }
+
+  .batchUpdate {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+  }
+
+  .moreAction {
+    .actionC {
+      display: block;
+
+    }
+
+    &:hover {
+      .actionC {
+        display: block;
+
+      }
+    }
+  }
+}
+
+.caozuo {
+  width: 20px;
+  .activeIcon {
+    display: none;
+  }
+
+  &:hover {
+    .activeIcon {
+      display: inline-block;
+    }
+
+    .icon {
+      display: none;
+    }
+  }
+}

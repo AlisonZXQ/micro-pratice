@@ -1,0 +1,63 @@
+.topCardStyle {
+  position: absolute !important;
+  top: 0px;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 2px 16px 0 rgba(139,157,175,0.18);
+}
+
+.otherCardStyle {
+  position: relative;
+  top: 100px;
+}
+
+.timeFilter {
+  :global {
+    .ant-radio-wrapper {
+      display: block;
+    }
+  }
+}
+
+.dividerStyle {
+  margin: 12px 0px !important;
+}
+
+.weekAims {
+  :global {
+    .ant-form-item-control {
+      line-height: unset;
+    }
+  }
+
+  .overflowAim {
+    height: 80px;
+    overflow: auto;
+  }
+}
+
+.queryArea {
+  margin-top: 12px;
+  height: 56px;
+  background: @color-white-1;
+}
+
+.listStyle {
+  background: @color-white-1;
+  box-shadow: 0 0 8px 0 rgba(25,34,46,0.08);
+  border-radius: 2px 2px 0px 0px;
+}
+
+.checkButton {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 26px;
+  height: 20px;
+  background: @color-black-1;
+  box-shadow: 0 0 8px 0 rgba(25,34,46,0.25);
+}
+.checkButton:hover {
+  color: @color-blue-6;
+}
+

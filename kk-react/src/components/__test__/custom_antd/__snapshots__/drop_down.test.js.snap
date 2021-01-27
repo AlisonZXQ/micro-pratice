@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`drop_down should snapshot correctly 1`] = `
+<span
+  onClick={[Function]}
+>
+  <Dropdown
+    mouseEnterDelay={0.15}
+    mouseLeaveDelay={0.1}
+    onClick={[Function]}
+    placement="bottomLeft"
+    trigger={
+      Array [
+        "click",
+      ]
+    }
+  >
+    <span
+      className="caozuo"
+    >
+      更多
+      <MyIcon
+        className="icon"
+        type="icon-gengduozhankai"
+      />
+    </span>
+  </Dropdown>
+</span>
+`;
