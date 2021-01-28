@@ -14,6 +14,9 @@ export const layout = {
   }, {
     name: 'sub-react',
     path: '/sub-react'
+  }, {
+    name: 'umi2-ep',
+    path: '/umi2-ep'
   }])
 }
 

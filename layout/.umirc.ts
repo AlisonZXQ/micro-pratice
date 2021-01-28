@@ -31,6 +31,12 @@ export default defineConfig({
         props: {
           first: 'hello-sub-react',
         }
+      }, {
+        name: 'umi2-ep',
+        entry: 'http://localhost:9000',
+        props: {
+          first: 'hello-sub-umi2-ep',
+        }
       }]
     },
   },
@@ -44,6 +50,7 @@ export default defineConfig({
         { path: '/user', microApp: 'user' },
         { path: '/ep', microApp: 'ep' },
         { path: '/sub-react', microApp: 'sub-react' },
+        { path: '/umi2-ep', microApp: 'umi2-ep' },
       ]
     }
   ],
