@@ -4,7 +4,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  layout: {},
+  // layout: {},
   qiankun: {
     master: {
       apps: [{
@@ -37,6 +37,12 @@ export default defineConfig({
         props: {
           first: 'hello-sub-umi2-ep',
         }
+      }, {
+        name: 'easyproject',
+        entry: 'http://localhost:8000',
+        props: {
+          first: 'hello-easyproject',
+        }
       }]
     },
   },
@@ -51,6 +57,7 @@ export default defineConfig({
         { path: '/ep', microApp: 'ep' },
         { path: '/sub-react', microApp: 'sub-react' },
         { path: '/umi2-ep', microApp: 'umi2-ep' },
+        { path: '/easyproject', microApp: 'easyproject' },
       ]
     }
   ],
@@ -62,13 +69,13 @@ export default defineConfig({
       target: 'http://localhost:8003',
     },
     '/ep': {
-      target: 'http://localhost:7000',
+      target: 'http://localhost:8000',
     },
     '/rest': {
-      target: 'http://localhost:7000',
+      target: 'http://localhost:8000',
     },
     '/logout': {
-      target: 'http://localhost:7000',
+      target: 'http://localhost:8000',
     },
   },
 });
