@@ -4,7 +4,11 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  // layout: {},
+  layout: {
+    name: 'Ant Design',
+    locale: true,
+    layout: 'side',
+  },
   qiankun: {
     master: {
       apps: [{
@@ -43,6 +47,18 @@ export default defineConfig({
         props: {
           first: 'hello-easyproject',
         }
+      }, {
+        name: 'pmo-component-lib',
+        entry: 'http://localhost:8100',
+        props: {
+          first: 'hello-dumi',
+        }
+      }, {
+        name: 'ep-umi2',
+        entry: 'http://localhost:8006/v2',
+        props: {
+          first: 'hello-ep-umi2',
+        }
       }]
     },
   },
@@ -58,6 +74,8 @@ export default defineConfig({
         { path: '/sub-react', microApp: 'sub-react' },
         { path: '/umi2-ep', microApp: 'umi2-ep' },
         { path: '/easyproject', microApp: 'easyproject' },
+        { path: '/docs', microApp: 'pmo-component-lib' },
+        { path: '/v2', microApp: 'ep-umi2' },
       ]
     }
   ],
@@ -69,13 +87,13 @@ export default defineConfig({
       target: 'http://localhost:8003',
     },
     '/ep': {
-      target: 'http://localhost:8000',
+      target: 'http://localhost:8006',
     },
     '/rest': {
-      target: 'http://localhost:8000',
+      target: 'http://localhost:8006',
     },
     '/logout': {
-      target: 'http://localhost:8000',
+      target: 'http://localhost:8006',
     },
   },
 });

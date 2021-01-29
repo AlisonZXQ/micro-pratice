@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export const layout = {
-  title: '商城管理',
+  title: '微前端',
   menuDataRender: () => ([
     // {
     //   name: '商铺管理',
@@ -28,8 +28,12 @@ export const layout = {
       path: '/easyproject'
     },
     {
-      name: 'ep-',
-      path: '/easyproject'
+      name: 'epui',
+      path: '/docs'
+    },
+    {
+      name: 'ep-umi2',
+      path: '/v2'
     }
   ])
 }

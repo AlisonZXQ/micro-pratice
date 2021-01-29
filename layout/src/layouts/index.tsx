@@ -22,14 +22,18 @@ import styles from './index.less';
 export default (props: any) => {
   return (
     <div>
-      <span style={{ marginRight: '10px' }}>
-        <Link to={'/show'}>shop</Link>
-      </span>
+      <div>
+        <span style={{ marginRight: '10px' }}>
+          <Link to={'/docs'}>/docs</Link>
+        </span>
 
-      <Link to={'/easyproject'}>easyproject</Link>
+        <span>
+          <Link to={'/easyproject'}>easyproject</Link>
+        </span>
+        大家都来看看吧 很搞笑的哈哈哈哈哈哈
 
-      大家都来看看吧 很搞笑的哈哈哈哈哈哈
-      <div className={styles.container}>
+      </div>
+      <div className={styles.con}>
         {props.children}
       </div>
     </div>
