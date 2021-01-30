@@ -24,7 +24,11 @@ export default (props: any) => {
     <div>
       <div>
         <span style={{ marginRight: '10px' }}>
-          <Link to={'/docs'}>/docs</Link>
+          <Link to={'/docs'}>docs</Link>
+        </span>
+
+        <span style={{ marginRight: '10px' }}>
+          <Link to={'/v2'}>ep-umi2</Link>
         </span>
 
         <span>

@@ -55,7 +55,7 @@ export default defineConfig({
         }
       }, {
         name: 'ep-umi2',
-        entry: 'http://localhost:8006/v2',
+        entry: 'http://localhost:8006',
         props: {
           first: 'hello-ep-umi2',
         }
