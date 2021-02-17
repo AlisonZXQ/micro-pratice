@@ -34,8 +34,7 @@ export default (props: any) => {
         <span>
           <Link to={'/easyproject'}>easyproject</Link>
         </span>
-        大家都来看看吧 很搞笑的哈哈哈哈哈哈
-
+        公用的头部
       </div>
       <div className={styles.con}>
         {props.children}

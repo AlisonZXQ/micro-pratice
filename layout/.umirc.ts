@@ -23,13 +23,15 @@ export default defineConfig({
         props: {
           first: 'hello-user',
         }
-      }, {
-        name: 'ep',
-        entry: 'http://localhost:7000',
-        props: {
-          first: 'hello-ep',
-        }
-      }, {
+      },
+      // {
+      //   name: 'ep',
+      //   entry: 'http://localhost:7000',
+      //   props: {
+      //     first: 'hello-ep',
+      //   }
+      // },
+      {
         name: 'sub-react',
         entry: 'http://localhost:8100',
         props: {
@@ -43,7 +45,7 @@ export default defineConfig({
         }
       }, {
         name: 'easyproject',
-        entry: 'http://localhost:8000',
+        entry: 'http://localhost:7000',
         props: {
           first: 'hello-easyproject',
         }
@@ -70,7 +72,7 @@ export default defineConfig({
         { path: '/', component: '@/pages/index' },
         { path: '/shop', microApp: 'shop' },
         { path: '/user', microApp: 'user' },
-        { path: '/ep', microApp: 'ep' },
+        // { path: '/ep', microApp: 'ep' },
         { path: '/sub-react', microApp: 'sub-react' },
         { path: '/umi2-ep', microApp: 'umi2-ep' },
         { path: '/easyproject', microApp: 'easyproject' },
@@ -87,13 +89,13 @@ export default defineConfig({
       target: 'http://localhost:8003',
     },
     '/ep': {
-      target: 'http://localhost:8006',
+      target: 'http://localhost:7000',
     },
     '/rest': {
-      target: 'http://localhost:8006',
+      target: 'http://localhost:7000',
     },
     '/logout': {
-      target: 'http://localhost:8006',
+      target: 'http://localhost:7000',
     },
   },
 });

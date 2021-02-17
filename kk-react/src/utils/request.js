@@ -13,7 +13,7 @@ const CODE_MAP = {
 
 const cookieObj = getCookie();
 let cookieParams = {
-  pmot: '1635e6bcd5d64259a8b8f144030053b9',
+  pmot: 'e73beb9bfffd46aaa1f9dd290250846b',
   pmou: 'zhangxueqing01',
 };
 

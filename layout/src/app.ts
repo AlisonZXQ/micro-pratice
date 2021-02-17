@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 export const layout = {
   title: '微前端',
   menuDataRender: () => ([
-    // {
-    //   name: '商铺管理',
-    //   path: '/shop'
-    // },
+    {
+      name: '商铺管理',
+      path: '/shop'
+    },
     // {
     //   name: '用户管理',
     //   path: '/user'
@@ -15,10 +15,10 @@ export const layout = {
     //   name: 'easy project',
     //   path: '/ep'
     // },
-    // {
-    //   name: 'sub-react',
-    //   path: '/sub-react'
-    // },
+    {
+      name: 'sub-react',
+      path: '/sub-react'
+    },
     // {
     //   name: 'umi2-ep',
     //   path: '/umi2-ep'
