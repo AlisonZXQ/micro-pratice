@@ -95,7 +95,7 @@ export default defineConfig({
       target: 'http://localhost:7000',
     },
     '/logout': {
-      target: 'http://localhost:7000',
+      target: 'hhttp://localhost:7000',
     },
   },
 });
